@@ -16,8 +16,8 @@ export function DailyMessage() {
   const displayContent = message?.content || "Каждый день с тобой — это подарок.";
 
   return (
-    <div className="w-full max-w-sm mx-auto px-2">
-      <p className="text-lg sm:text-xl font-light italic leading-relaxed text-white/80 text-center">
+    <div className="w-full max-w-sm mx-auto px-4">
+      <p className="text-xl sm:text-2xl font-serif italic font-light leading-relaxed text-white/90 text-center">
         "{displayContent}"
       </p>
     </div>

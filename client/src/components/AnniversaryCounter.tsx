@@ -23,10 +23,10 @@ interface TimeBlockProps {
 function TimeBlock({ value, label }: TimeBlockProps) {
   return (
     <div className="flex flex-col items-center flex-1 min-w-0">
-      <span className="text-2xl sm:text-3xl font-bold text-white tabular-nums leading-none mb-1">
+      <span className="text-3xl sm:text-4xl font-bold text-white tabular-nums leading-none mb-2">
         {String(value).padStart(2, '0')}
       </span>
-      <span className="text-[10px] uppercase tracking-wider text-muted-foreground/60 font-medium">
+      <span className="text-[11px] uppercase tracking-[0.1em] text-white/40 font-medium">
         {label}
       </span>
     </div>

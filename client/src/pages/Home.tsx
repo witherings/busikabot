@@ -1,13 +1,50 @@
 import { motion } from "framer-motion";
 import { AnniversaryCounter } from "@/components/AnniversaryCounter";
 import { DailyMessage } from "@/components/DailyMessage";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { differenceInDays } from "date-fns";
 
 const START_DATE = new Date(2024, 11, 31);
 
+const Star = ({ style }: { style: any }) => (
+  <motion.div
+    className="absolute rounded-full"
+    initial={{ opacity: 0.2, scale: 0.8 }}
+    animate={{ 
+      opacity: [0.2, 0.8, 0.2],
+      scale: [0.8, 1.2, 0.8],
+    }}
+    transition={{
+      duration: 3 + Math.random() * 4,
+      repeat: Infinity,
+      ease: "easeInOut",
+      delay: Math.random() * 5
+    }}
+    style={style}
+  />
+);
+
 export default function Home() {
   const [daysTogether, setDaysTogether] = useState(0);
+
+  const stars = useMemo(() => {
+    return Array.from({ length: 50 }).map((_, i) => {
+      const colors = [
+        'rgba(255, 255, 255, 0.8)', // White
+        'rgba(255, 245, 150, 0.8)', // Yellowish
+        'rgba(180, 220, 255, 0.8)', // Bluish
+      ];
+      return {
+        id: i,
+        top: `${Math.random() * 100}%`,
+        left: `${Math.random() * 100}%`,
+        width: `${1 + Math.random() * 2}px`,
+        height: `${1 + Math.random() * 2}px`,
+        backgroundColor: colors[Math.floor(Math.random() * colors.length)],
+        boxShadow: `0 0 ${2 + Math.random() * 4}px ${colors[Math.floor(Math.random() * colors.length)]}`
+      };
+    });
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -17,23 +54,21 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-screen w-screen bg-[#080c14] text-foreground flex flex-col relative overflow-hidden fixed inset-0 touch-none font-sans">
+    <div className="h-screen w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-hidden fixed inset-0 touch-none font-sans">
       
-      {/* Subtle background star-like dots */}
-      <div className="absolute inset-0 pointer-events-none opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-0.5 h-0.5 bg-white rounded-full"></div>
-        <div className="absolute top-1/2 left-1/3 w-0.5 h-0.5 bg-white rounded-full"></div>
-        <div className="absolute top-1/3 left-2/3 w-0.5 h-0.5 bg-white rounded-full"></div>
-        <div className="absolute top-2/3 left-3/4 w-0.5 h-0.5 bg-white rounded-full"></div>
-        <div className="absolute top-3/4 left-1/2 w-0.5 h-0.5 bg-white rounded-full"></div>
+      {/* Animated Stars */}
+      <div className="absolute inset-0 pointer-events-none">
+        {stars.map(star => (
+          <Star key={star.id} style={star} />
+        ))}
       </div>
 
       <main className="flex-1 flex flex-col items-center justify-center p-6 relative z-10 max-w-md mx-auto w-full">
         
-        <div className="w-full bg-[#121826]/80 backdrop-blur-md rounded-[2.5rem] p-8 sm:p-10 flex flex-col items-center shadow-2xl border border-white/[0.03]">
+        <div className="w-full bg-white/[0.03] backdrop-blur-md rounded-[3rem] p-10 sm:p-12 flex flex-col items-center shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/[0.05]">
           {/* Photo Frame */}
-          <div className="relative mb-8">
-            <div className="w-44 h-44 sm:w-52 sm:h-52 rounded-full overflow-hidden border-[6px] border-[#1a2235] shadow-xl">
+          <div className="relative mb-10">
+            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-[8px] border-white/5 shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=2787&auto=format&fit=crop" 
                 alt="Us" 
@@ -42,26 +77,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-center space-y-2 mb-8">
-            <h1 className="text-lg sm:text-xl font-light text-white/90 tracking-wide">
+          <div className="text-center space-y-4 mb-10">
+            <h1 className="text-xl sm:text-2xl font-normal text-white/80 tracking-wide">
               Мы с бусинкой вместе уже
             </h1>
-            <div className="flex items-baseline justify-center gap-2">
-              <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c]">
+            <div className="flex items-baseline justify-center gap-3">
+              <span className="text-5xl sm:text-6xl font-bold text-[#f2c94c] tracking-tight">
                 {daysTogether}
               </span>
-              <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c]">
+              <span className="text-5xl sm:text-6xl font-bold text-[#f2c94c] tracking-tight">
                 дней
               </span>
             </div>
           </div>
 
           {/* Counters */}
-          <div className="w-full mb-10">
+          <div className="w-full mb-12">
             <AnniversaryCounter />
           </div>
 
-          <div className="w-full h-[1px] bg-white/10 mb-8" />
+          <div className="w-full h-[1px] bg-white/5 mb-10" />
 
           {/* Daily Card */}
           <div className="w-full">
