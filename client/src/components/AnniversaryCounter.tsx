@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { intervalToDuration, differenceInDays } from "date-fns";
+import { intervalToDuration } from "date-fns";
 
 type Duration = {
   years?: number;
@@ -11,22 +10,20 @@ type Duration = {
   seconds?: number;
 };
 
-// ДАТА НАЧАЛА: 31 декабря 2024 (чтобы 31 декабря 2025 был год)
-const START_DATE = new Date(2024, 11, 31); // Месяц начинается с 0 (11 = Дек)
+const START_DATE = new Date(2024, 11, 31);
 
 interface TimeBlockProps {
   value: number;
   label: string;
-  delay?: number;
 }
 
 function TimeBlock({ value, label }: TimeBlockProps) {
   return (
-    <div className="flex flex-col items-center flex-1 min-w-0">
-      <span className="text-lg sm:text-xl font-bold text-white tabular-nums leading-none mb-0.5">
+    <div className="flex flex-col items-center flex-1">
+      <span className="text-3xl font-extralight text-white tabular-nums leading-none mb-2">
         {String(value).padStart(2, '0')}
       </span>
-      <span className="text-[8px] uppercase tracking-[0.06em] text-white/40 font-medium">
+      <span className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-light">
         {label}
       </span>
     </div>
@@ -40,24 +37,23 @@ export function AnniversaryCounter() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const currentDate = new Date();
-      setDuration(intervalToDuration({ start: START_DATE, end: currentDate }));
+      setDuration(intervalToDuration({ start: START_DATE, end: new Date() }));
     }, 1000);
-
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="w-full space-y-1">
-      <div className="flex justify-between w-full gap-1">
+    <div className="w-full space-y-8 glass-card p-8 rounded-[2rem]">
+      <div className="flex justify-between w-full">
         <TimeBlock value={duration.years || 0} label="года" />
-        <TimeBlock value={duration.months || 0} label="месяцев" />
+        <TimeBlock value={duration.months || 0} label="мес" />
         <TimeBlock value={duration.days || 0} label="дней" />
       </div>
-      <div className="flex justify-between w-full gap-1">
+      <div className="h-px bg-white/[0.05] w-full" />
+      <div className="flex justify-between w-full">
         <TimeBlock value={duration.hours || 0} label="час" />
-        <TimeBlock value={duration.minutes || 0} label="минут" />
-        <TimeBlock value={duration.seconds || 0} label="секунды" />
+        <TimeBlock value={duration.minutes || 0} label="мин" />
+        <TimeBlock value={duration.seconds || 0} label="сек" />
       </div>
     </div>
   );

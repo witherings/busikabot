@@ -76,30 +76,30 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-[100dvh] w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-hidden touch-none font-sans">
+    <div className="min-h-[100dvh] w-screen bg-[#050b1a] text-foreground flex flex-col relative overflow-hidden font-sans">
       
       {/* Animated Stars */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className="absolute inset-0 pointer-events-none z-[15]"
+        className="absolute inset-0 pointer-events-none z-0"
       >
         {stars.map(star => (
           <Star key={star.id} style={star} />
         ))}
       </motion.div>
 
-      <main className="flex-1 flex flex-col px-5 pt-12 pb-[max(32px,env(safe-area-inset-bottom))] relative z-10 w-full overflow-y-auto">
+      <main className="flex-1 flex flex-col items-center justify-between px-6 py-12 relative z-10 w-full max-w-lg mx-auto overflow-y-auto">
         
         {/* 1. Photo Frame */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="relative flex-shrink-0 flex justify-center"
+          className="relative flex-shrink-0"
         >
-          <div className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-[6px] border-white/5 shadow-2xl">
+          <div className="w-44 h-44 rounded-full overflow-hidden border-4 border-primary shadow-[0_0_30px_rgba(234,179,8,0.2)]">
             <img 
               src={coupleImg} 
               alt="Us" 
@@ -108,58 +108,58 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* 2. Header - 32px from avatar */}
+        {/* 2. Header */}
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-center space-y-1 flex-shrink-0 mt-10"
+          className="text-center w-full"
         >
-          <h1 className="text-sm sm:text-base font-normal text-white/80 tracking-wide">
-            Мы с бусинкой вместе:
+          <h1 className="text-xl font-light text-white/70 tracking-widest mb-2 uppercase">
+            Мы вместе:
           </h1>
-          <div className="flex items-baseline justify-center gap-3">
-            <span className="text-7xl sm:text-8xl font-bold text-[#f2c94c] tracking-tight leading-none">
+          <div className="flex items-center justify-center gap-4">
+            <span className="text-8xl font-light text-primary gold-glow leading-none">
               {daysTogether}
             </span>
-            <span className="text-3xl sm:text-4xl font-bold text-[#f2c94c] tracking-tight">
+            <span className="text-3xl font-light text-primary/80 tracking-tight self-end pb-2">
               дней
             </span>
           </div>
         </motion.div>
 
-        {/* 3. Detailed Counter - compact, right under days */}
+        {/* 3. Detailed Counter */}
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="w-full flex-shrink-0 mt-2"
+          className="w-full flex-shrink-0"
         >
           <AnniversaryCounter />
         </motion.div>
 
-        {/* 4. Daily Message (Quote only) - 24px before button */}
+        {/* 4. Daily Message */}
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4, duration: 0.8 }}
-          className="w-full flex-shrink-0 mb-6"
+          transition={{ delay: 1.1, duration: 0.8 }}
+          className="w-full flex-shrink-0"
         >
           <DailyMessage />
         </motion.div>
 
-        {/* 5. ЖМЯК Button (separate element) */}
+        {/* 5. ЖМЯК Button */}
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.6, duration: 0.8 }}
+          transition={{ delay: 1.4, duration: 0.8 }}
           className="w-full flex-shrink-0"
         >
           <Button
             onClick={handleSendToTelegram}
             disabled={isPending}
             variant="outline"
-            className="w-full text-white/80 text-base font-semibold h-14 min-h-14"
+            className="w-full glass-card hover-elevate active-elevate-2 text-primary border-primary/30 text-lg font-light tracking-widest h-16 rounded-full transition-all duration-300 hover:border-primary/60 hover:bg-primary/5"
             data-testid="button-send-telegram"
           >
             {isPending ? "Отправляю..." : "ЖМЯК"}
