@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 import { AnniversaryCounter } from "@/components/AnniversaryCounter";
 import { DailyMessage } from "@/components/DailyMessage";
 import { useState, useEffect, useMemo } from "react";
-import { differenceInDays } from "date-fns";
+import { differenceInDays, intervalToDuration } from "date-fns";
+import { Button } from "@/components/ui/button";
+import { useSendTelegram } from "@/hooks/use-telegram";
+import { getRandomMessage } from "@/data/messages";
 
 import coupleImg from "@/assets/couple.png";
 
@@ -30,6 +33,20 @@ export default function Home() {
   const [daysTogether, setDaysTogether] = useState(() => 
     differenceInDays(new Date(), START_DATE)
   );
+  const [duration, setDuration] = useState(() =>
+    intervalToDuration({ start: START_DATE, end: new Date() })
+  );
+  const { mutate: sendTelegram, isPending } = useSendTelegram();
+
+  const handleSendToTelegram = () => {
+    const timeText = `${String(duration.years || 0).padStart(2, "0")} лет, ${String(duration.months || 0).padStart(2, "0")} месяцев, ${String(duration.days || 0).padStart(2, "0")} дней, ${String(duration.hours || 0).padStart(2, "0")} часов, ${String(duration.minutes || 0).padStart(2, "0")} минут, ${String(duration.seconds || 0).padStart(2, "0")} секунд`;
+    const randomMessage = getRandomMessage();
+
+    sendTelegram({
+      time: timeText,
+      message: randomMessage,
+    });
+  };
 
   const stars = useMemo(() => {
     return Array.from({ length: 50 }).map((_, i) => {
@@ -53,12 +70,13 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setDaysTogether(differenceInDays(new Date(), START_DATE));
+      setDuration(intervalToDuration({ start: START_DATE, end: new Date() }));
     }, 1000);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="h-screen w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-hidden fixed inset-0 touch-none font-sans">
+    <div className="min-h-[100dvh] w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-hidden touch-none font-sans">
       
       {/* Animated Stars */}
       <motion.div 
@@ -72,79 +90,83 @@ export default function Home() {
         ))}
       </motion.div>
 
-      <main className="flex-1 flex flex-col items-center justify-between px-3 py-6 relative z-10 w-full">
+      <main className="flex-1 flex flex-col px-5 pt-6 pb-[max(32px,env(safe-area-inset-bottom))] relative z-10 w-full overflow-y-auto">
         
+        {/* 1. Photo Frame */}
         <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-          className="w-full h-full bg-transparent rounded-3xl px-6 py-8 flex flex-col items-center justify-between relative overflow-hidden z-20"
+          transition={{ delay: 0.2, duration: 1 }}
+          className="relative flex-shrink-0 flex justify-center"
         >
-          {/* Transparent card with border and shadow */}
-          <div className="absolute inset-0 bg-white/[0.01] pointer-events-none rounded-3xl border border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.4)] z-[-1]"></div>
-          
-          {/* 1. Photo Frame */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 1 }}
-            className="relative flex-shrink-0"
-          >
-            <div className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-[6px] border-white/5 shadow-2xl">
-              <img 
-                src={coupleImg} 
-                alt="Us" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
+          <div className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-[6px] border-white/5 shadow-2xl">
+            <img 
+              src={coupleImg} 
+              alt="Us" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
 
-          {/* 2. Header */}
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-center space-y-2 flex-shrink-0"
-          >
-            <h1 className="text-2xl sm:text-3xl font-normal text-white/80 tracking-wide">
-              Мы с бусинкой вместе:
-            </h1>
-            <div className="flex items-baseline justify-center gap-2">
-              <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c] tracking-tight">
-                {daysTogether}
-              </span>
-              <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c] tracking-tight">
-                дней
-              </span>
-            </div>
-          </motion.div>
+        {/* 2. Header - 32px from avatar */}
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="text-center space-y-2 flex-shrink-0 mt-8"
+        >
+          <h1 className="text-2xl sm:text-3xl font-normal text-white/80 tracking-wide">
+            Мы с бусинкой вместе:
+          </h1>
+          <div className="flex items-baseline justify-center gap-2">
+            <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c] tracking-tight">
+              {daysTogether}
+            </span>
+            <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c] tracking-tight">
+              дней
+            </span>
+          </div>
+        </motion.div>
 
-          {/* 3. Detailed Counter */}
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-            className="w-full flex-shrink-0"
-          >
-            <AnniversaryCounter />
-          </motion.div>
+        {/* 3. Detailed Counter - 16px from header */}
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
+          className="w-full flex-shrink-0 mt-4"
+        >
+          <AnniversaryCounter />
+        </motion.div>
 
-          <motion.div 
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ delay: 1.1, duration: 1 }}
-            className="w-full h-[1px] bg-white/5 flex-shrink-0 origin-center" 
-          />
+        {/* Spacer - Creates visual separation (40-50px) */}
+        <div className="flex-1" />
 
-          {/* 4. Daily Card */}
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.4, duration: 0.8 }}
-            className="w-full flex-1 flex flex-col"
+        {/* 4. Daily Message (Quote only) - 24px before button */}
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.4, duration: 0.8 }}
+          className="w-full flex-shrink-0 mb-6"
+        >
+          <DailyMessage />
+        </motion.div>
+
+        {/* 5. ЖМЯК Button (separate element) */}
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.6, duration: 0.8 }}
+          className="w-full flex-shrink-0"
+        >
+          <Button
+            onClick={handleSendToTelegram}
+            disabled={isPending}
+            variant="outline"
+            className="w-full text-white/80 text-base font-semibold h-14 min-h-14"
+            data-testid="button-send-telegram"
           >
-            <DailyMessage />
-          </motion.div>
+            {isPending ? "Отправляю..." : "ЖМЯК"}
+          </Button>
         </motion.div>
 
       </main>
