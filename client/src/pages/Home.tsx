@@ -138,9 +138,6 @@ export default function Home() {
           <AnniversaryCounter />
         </motion.div>
 
-        {/* Spacer - Creates visual separation (40-50px) */}
-        <div className="flex-1" />
-
         {/* 4. Daily Message (Quote only) - 24px before button */}
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
