@@ -58,7 +58,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-screen w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-hidden fixed inset-0 touch-none font-sans">
+    <div className="min-h-screen w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-auto touch-none font-sans">
       
       {/* Animated Stars */}
       <motion.div 
@@ -72,7 +72,7 @@ export default function Home() {
         ))}
       </motion.div>
 
-      <main className="flex-1 flex flex-col items-center justify-center p-6 relative z-10 max-w-md mx-auto w-full">
+      <main className="flex flex-col items-center justify-center p-6 relative z-10 max-w-md mx-auto w-full py-12">
         
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}

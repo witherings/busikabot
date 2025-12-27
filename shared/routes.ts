@@ -43,6 +43,18 @@ export const api = {
         200: z.array(z.custom<typeof messages.$inferSelect>()),
       },
     },
+    sendTelegram: {
+      method: "POST" as const,
+      path: "/api/telegram/send",
+      input: z.object({
+        time: z.string(),
+        message: z.string(),
+      }),
+      responses: {
+        200: z.object({ success: z.boolean() }),
+        400: errorSchemas.validation,
+      },
+    },
   },
 };
 

@@ -49,6 +49,45 @@ export async function registerRoutes(
     res.json(list);
   });
 
+  // Send message via Telegram
+  app.post(api.messages.sendTelegram.path, async (req, res) => {
+    try {
+      const input = api.messages.sendTelegram.input.parse(req.body);
+      const botToken = process.env.TELEGRAM_BOT_TOKEN;
+      const chatId = process.env.TELEGRAM_CHAT_ID || "me";
+
+      if (!botToken) {
+        return res.status(400).json({ message: "Telegram bot token not configured" });
+      }
+
+      const text = `${input.time}\n-----\n${input.message}`;
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: text,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Telegram API error: ${response.statusText}`);
+      }
+
+      res.json({ success: true });
+    } catch (err) {
+      if (err instanceof z.ZodError) {
+        return res.status(400).json({
+          message: err.errors[0].message,
+          field: err.errors[0].path.join('.'),
+        });
+      }
+      throw err;
+    }
+  });
+
   // Initial Seed for the specific user request
   await seedMessages();
 
