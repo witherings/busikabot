@@ -79,7 +79,9 @@ export async function registerRoutes(
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));
         console.error("Telegram API error:", errorData);
-        throw new Error(`Telegram API error: ${response.statusText}`);
+        return res.status(400).json({ 
+          message: `Failed to send message to Telegram: ${errorData.description || response.statusText}` 
+        });
       }
 
       res.json({ success: true });
@@ -90,7 +92,8 @@ export async function registerRoutes(
           field: err.errors[0].path.join('.'),
         });
       }
-      throw err;
+      console.error("Telegram send error:", err);
+      return res.status(500).json({ message: "Failed to send message to Telegram" });
     }
   });
 
