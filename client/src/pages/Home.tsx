@@ -90,7 +90,7 @@ export default function Home() {
         ))}
       </motion.div>
 
-      <main className="flex-1 flex flex-col px-5 pt-6 pb-[max(32px,env(safe-area-inset-bottom))] relative z-10 w-full overflow-y-auto">
+      <main className="flex-1 flex flex-col px-5 pt-12 pb-[max(32px,env(safe-area-inset-bottom))] relative z-10 w-full overflow-y-auto">
         
         {/* 1. Photo Frame */}
         <motion.div 
@@ -113,27 +113,27 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-center space-y-2 flex-shrink-0 mt-8"
+          className="text-center space-y-1 flex-shrink-0 mt-10"
         >
-          <h1 className="text-2xl sm:text-3xl font-normal text-white/80 tracking-wide">
+          <h1 className="text-sm sm:text-base font-normal text-white/80 tracking-wide">
             Мы с бусинкой вместе:
           </h1>
-          <div className="flex items-baseline justify-center gap-2">
-            <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c] tracking-tight">
+          <div className="flex items-baseline justify-center gap-3">
+            <span className="text-7xl sm:text-8xl font-bold text-[#f2c94c] tracking-tight leading-none">
               {daysTogether}
             </span>
-            <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c] tracking-tight">
+            <span className="text-3xl sm:text-4xl font-bold text-[#f2c94c] tracking-tight">
               дней
             </span>
           </div>
         </motion.div>
 
-        {/* 3. Detailed Counter - 16px from header */}
+        {/* 3. Detailed Counter - compact, right under days */}
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="w-full flex-shrink-0 mt-4"
+          className="w-full flex-shrink-0 mt-2"
         >
           <AnniversaryCounter />
         </motion.div>
