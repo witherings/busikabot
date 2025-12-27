@@ -34,7 +34,9 @@ function TimeBlock({ value, label }: TimeBlockProps) {
 }
 
 export function AnniversaryCounter() {
-  const [duration, setDuration] = useState<Duration>({});
+  const [duration, setDuration] = useState<Duration>(() => 
+    intervalToDuration({ start: START_DATE, end: new Date() })
+  );
 
   useEffect(() => {
     const timer = setInterval(() => {
