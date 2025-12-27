@@ -99,7 +99,7 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 1 }}
           className="relative flex-shrink-0"
         >
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary shadow-[0_0_20px_rgba(234,179,8,0.2)]">
+          <div className="w-40 h-40 rounded-full overflow-hidden shadow-[0_0_30px_rgba(234,179,8,0.15)]">
             <img 
               src={coupleImg} 
               alt="Us" 
@@ -122,7 +122,7 @@ export default function Home() {
             <span className="text-7xl font-light text-primary gold-glow leading-none">
               {daysTogether}
             </span>
-            <span className="text-2xl font-light text-primary/80 tracking-tight self-end pb-1">
+            <span className="text-4xl font-light text-primary gold-glow tracking-tight self-end pb-1">
               дней
             </span>
           </div>
