@@ -16,31 +16,10 @@ export function DailyMessage() {
   const displayContent = message?.content || "Каждый день с тобой — это подарок.";
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="relative w-full max-w-sm mx-auto mt-4 px-4"
-    >
-      <div className="glass-card rounded-2xl p-6 relative overflow-hidden group">
-        <div className="absolute top-0 right-0 p-4 opacity-5">
-          <Quote className="w-12 h-12 text-primary" />
-        </div>
-        
-        <div className="relative z-10 flex flex-col items-center text-center space-y-4">
-          <div className="flex flex-col items-center gap-1">
-            <span className="text-[10px] font-mono text-primary/60 tracking-widest uppercase">
-              Сообщение дня
-            </span>
-          </div>
-
-          <p className="text-lg font-serif italic leading-relaxed text-white/90">
-            "{displayContent}"
-          </p>
-
-          <div className="w-8 h-[1px] bg-primary/20" />
-        </div>
-      </div>
-    </motion.div>
+    <div className="w-full max-w-sm mx-auto px-2">
+      <p className="text-lg sm:text-xl font-light italic leading-relaxed text-white/80 text-center">
+        "{displayContent}"
+      </p>
+    </div>
   );
 }
