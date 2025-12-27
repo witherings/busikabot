@@ -1,6 +1,15 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { intervalToDuration, formatDuration, differenceInDays } from "date-fns";
+import { intervalToDuration, differenceInDays } from "date-fns";
+
+type Duration = {
+  years?: number;
+  months?: number;
+  days?: number;
+  hours?: number;
+  minutes?: number;
+  seconds?: number;
+};
 
 // ДАТА НАЧАЛА: 31 декабря 2024 (чтобы 31 декабря 2025 был год)
 const START_DATE = new Date(2024, 11, 31); // Месяц начинается с 0 (11 = Дек)
