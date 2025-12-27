@@ -4,6 +4,8 @@ import { DailyMessage } from "@/components/DailyMessage";
 import { useState, useEffect, useMemo } from "react";
 import { differenceInDays } from "date-fns";
 
+import coupleImg from "@/assets/couple.png";
+
 const START_DATE = new Date(2024, 11, 31);
 
 const Star = ({ style }: { style: any }) => (
@@ -73,9 +75,9 @@ export default function Home() {
           <div className="relative mb-10">
             <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-[8px] border-white/5 shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=2787&auto=format&fit=crop" 
+                src={coupleImg} 
                 alt="Us" 
-                className="w-full h-full object-cover grayscale"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
