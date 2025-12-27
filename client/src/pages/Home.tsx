@@ -113,16 +113,16 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-center w-full"
+          className="text-center w-full pt-2"
         >
           <h1 className="text-xl font-light text-white/70 tracking-widest mb-2 uppercase">
             Мы вместе:
           </h1>
           <div className="flex items-center justify-center gap-4">
-            <span className="text-7xl font-light text-primary gold-glow leading-none">
+            <span className="text-7xl font-light text-primary gold-glow leading-none [text-shadow:0_0_30px_rgba(234,179,8,0.5)]">
               {daysTogether}
             </span>
-            <span className="text-4xl font-light text-primary gold-glow tracking-tight self-end pb-1">
+            <span className="text-4xl font-light text-primary gold-glow tracking-tight self-end pb-1 [text-shadow:0_0_30px_rgba(234,179,8,0.5)]">
               дней
             </span>
           </div>
