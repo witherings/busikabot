@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <div className="h-screen w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-hidden fixed inset-0 touch-none font-sans">
       
-      {/* Animated Stars - Moved to Z-INDEX 15 to be in FRONT of the card but behind content if needed */}
+      {/* Animated Stars */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -75,19 +75,19 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center justify-center p-6 relative z-10 max-w-md mx-auto w-full">
         
         <motion.div 
-          initial={{ opacity: 0, scale: 0.9, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           className="w-full bg-transparent rounded-[3rem] p-10 sm:p-12 flex flex-col items-center relative overflow-hidden z-20"
         >
           {/* Transparent card with border and shadow */}
           <div className="absolute inset-0 bg-white/[0.01] pointer-events-none rounded-[3rem] border border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.4)] z-[-1]"></div>
           
-          {/* Photo Frame */}
+          {/* 1. Photo Frame */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
             className="relative mb-6"
           >
             <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-[8px] border-white/5 shadow-2xl">
@@ -99,7 +99,13 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className="text-center space-y-4 mb-8">
+          {/* 2. Header */}
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="text-center space-y-4 mb-8"
+          >
             <h1 className="text-3xl sm:text-4xl font-normal text-white/80 tracking-wide">
               Мы с бусинкой вместе:
             </h1>
@@ -111,19 +117,34 @@ export default function Home() {
                 дней
               </span>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Counters */}
-          <div className="w-full mb-12">
+          {/* 3. Detailed Counter */}
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+            className="w-full mb-12"
+          >
             <AnniversaryCounter />
-          </div>
+          </motion.div>
 
-          <div className="w-full h-[1px] bg-white/5 mb-10" />
+          <motion.div 
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 1.1, duration: 1 }}
+            className="w-full h-[1px] bg-white/5 mb-10 origin-center" 
+          />
 
-          {/* Daily Card */}
-          <div className="w-full">
+          {/* 4. Daily Card */}
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.4, duration: 0.8 }}
+            className="w-full"
+          >
             <DailyMessage />
-          </div>
+          </motion.div>
         </motion.div>
 
       </main>
