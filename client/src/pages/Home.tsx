@@ -72,7 +72,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-white/[0.01] pointer-events-none rounded-[3rem] border border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.4)] z-[-1]"></div>
           
           {/* Photo Frame */}
-          <div className="relative mb-10">
+          <div className="relative mb-6">
             <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-[8px] border-white/5 shadow-2xl">
               <img 
                 src={coupleImg} 
@@ -82,8 +82,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-center space-y-4 mb-10">
-            <h1 className="text-2xl sm:text-3xl font-normal text-white/80 tracking-wide">
+          <div className="text-center space-y-4 mb-8">
+            <h1 className="text-3xl sm:text-4xl font-normal text-white/80 tracking-wide">
               Мы с бусинкой вместе:
             </h1>
             <div className="flex items-baseline justify-center gap-3">

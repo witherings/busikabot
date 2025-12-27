@@ -17,7 +17,7 @@ export function DailyMessage() {
 
   return (
     <div className="w-full max-w-sm mx-auto px-4">
-      <p className="text-xl sm:text-2xl font-serif italic font-light leading-relaxed text-white/90 text-center">
+      <p className="text-xl sm:text-2xl font-normal italic leading-relaxed text-white/90 text-center">
         "{displayContent}"
       </p>
     </div>
