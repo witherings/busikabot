@@ -97,9 +97,9 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="relative flex-shrink-0"
+          className="relative flex-shrink-0 pt-8"
         >
-          <div className="w-40 h-40 rounded-full overflow-hidden shadow-[0_0_30px_rgba(234,179,8,0.15)]">
+          <div className="w-40 h-40 rounded-full overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.15)]">
             <img 
               src={coupleImg} 
               alt="Us" 
