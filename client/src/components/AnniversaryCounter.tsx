@@ -20,10 +20,10 @@ interface TimeBlockProps {
 function TimeBlock({ value, label }: TimeBlockProps) {
   return (
     <div className="flex flex-col items-center flex-1">
-      <span className="text-3xl font-extralight text-white tabular-nums leading-none mb-2">
+      <span className="text-2xl font-light text-white tabular-nums leading-none mb-1">
         {String(value).padStart(2, '0')}
       </span>
-      <span className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-light">
+      <span className="text-[9px] uppercase tracking-[0.2em] text-white/40 font-light">
         {label}
       </span>
     </div>
@@ -43,7 +43,7 @@ export function AnniversaryCounter() {
   }, []);
 
   return (
-    <div className="w-full space-y-8 glass-card p-8 rounded-[2rem]">
+    <div className="w-full space-y-6 glass-card p-6 rounded-[2rem]">
       <div className="flex justify-between w-full">
         <TimeBlock value={duration.years || 0} label="года" />
         <TimeBlock value={duration.months || 0} label="мес" />

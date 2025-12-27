@@ -90,7 +90,7 @@ export default function Home() {
         ))}
       </motion.div>
 
-      <main className="flex-1 flex flex-col items-center justify-between px-6 py-12 relative z-10 w-full max-w-lg mx-auto overflow-y-auto">
+      <main className="flex-1 flex flex-col items-center px-6 py-12 relative z-10 w-full max-w-lg mx-auto overflow-y-auto space-y-12">
         
         {/* 1. Photo Frame */}
         <motion.div 
@@ -99,7 +99,7 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 1 }}
           className="relative flex-shrink-0"
         >
-          <div className="w-44 h-44 rounded-full overflow-hidden border-4 border-primary shadow-[0_0_30px_rgba(234,179,8,0.2)]">
+          <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary shadow-[0_0_30px_rgba(234,179,8,0.2)]">
             <img 
               src={coupleImg} 
               alt="Us" 
@@ -113,9 +113,9 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-center w-full"
+          className="text-center w-full pt-4"
         >
-          <h1 className="text-xl font-light text-white/70 tracking-widest mb-2 uppercase">
+          <h1 className="text-2xl font-light text-white/70 tracking-widest mb-6 uppercase">
             Мы вместе:
           </h1>
           <div className="flex items-center justify-center gap-4">
@@ -153,7 +153,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.4, duration: 0.8 }}
-          className="w-full flex-shrink-0"
+          className="w-full flex-shrink-0 pt-4"
         >
           <Button
             onClick={handleSendToTelegram}

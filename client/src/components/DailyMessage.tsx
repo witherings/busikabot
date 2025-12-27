@@ -26,7 +26,7 @@ export function DailyMessage() {
         transition={{ delay: 0.3, duration: 1 }}
         className="relative z-10"
       >
-        <p className="text-lg font-light italic leading-relaxed text-white/80 text-center font-serif">
+        <p className="text-lg font-light italic leading-relaxed text-white/80 text-center">
           "{displayContent}"
         </p>
       </motion.div>
