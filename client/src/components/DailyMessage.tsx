@@ -40,13 +40,13 @@ export function DailyMessage() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="w-full p-5 rounded-2xl bg-white/[0.02] border border-white/5 shadow-xl relative overflow-hidden"
+      className="w-full h-full p-5 rounded-2xl bg-white/[0.02] border border-white/5 shadow-xl relative overflow-hidden flex flex-col"
     >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
-        className="space-y-4"
+        className="flex flex-col h-full justify-between"
       >
         <p className="text-base sm:text-lg font-normal italic leading-relaxed text-white/90 text-center relative z-10">
           "{displayContent}"
@@ -57,10 +57,10 @@ export function DailyMessage() {
             onClick={handleSendToTelegram}
             disabled={isPending}
             variant="outline"
-            className="w-full text-white/80 text-sm"
+            className="w-full text-white/80 text-base font-semibold h-14 min-h-14"
             data-testid="button-send-telegram"
           >
-            {isPending ? "Отправляю..." : "Жмякни меня"}
+            {isPending ? "Отправляю..." : "ЖМЯК"}
           </Button>
         </div>
       </motion.div>

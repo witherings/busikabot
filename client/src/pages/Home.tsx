@@ -72,13 +72,13 @@ export default function Home() {
         ))}
       </motion.div>
 
-      <main className="flex-1 flex flex-col items-center justify-center px-3 py-4 relative z-10 w-full">
+      <main className="flex-1 flex flex-col items-center justify-between px-3 py-6 relative z-10 w-full">
         
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-          className="w-full h-full bg-transparent rounded-3xl p-8 flex flex-col items-center relative overflow-hidden z-20"
+          className="w-full h-full bg-transparent rounded-3xl px-6 py-8 flex flex-col items-center justify-between relative overflow-hidden z-20"
         >
           {/* Transparent card with border and shadow */}
           <div className="absolute inset-0 bg-white/[0.01] pointer-events-none rounded-3xl border border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.4)] z-[-1]"></div>
@@ -88,7 +88,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 1 }}
-            className="relative mb-3"
+            className="relative flex-shrink-0"
           >
             <div className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-[6px] border-white/5 shadow-2xl">
               <img 
@@ -104,7 +104,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-center space-y-2 mb-3"
+            className="text-center space-y-2 flex-shrink-0"
           >
             <h1 className="text-2xl sm:text-3xl font-normal text-white/80 tracking-wide">
               Мы с бусинкой вместе:
@@ -124,7 +124,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="w-full mb-3"
+            className="w-full flex-shrink-0"
           >
             <AnniversaryCounter />
           </motion.div>
@@ -133,7 +133,7 @@ export default function Home() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ delay: 1.1, duration: 1 }}
-            className="w-full h-[1px] bg-white/5 mb-3 origin-center" 
+            className="w-full h-[1px] bg-white/5 flex-shrink-0 origin-center" 
           />
 
           {/* 4. Daily Card */}
@@ -141,7 +141,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.4, duration: 0.8 }}
-            className="w-full"
+            className="w-full flex-1 flex flex-col"
           >
             <DailyMessage />
           </motion.div>
