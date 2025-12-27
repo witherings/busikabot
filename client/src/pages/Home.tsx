@@ -56,8 +56,8 @@ export default function Home() {
   return (
     <div className="h-screen w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-hidden fixed inset-0 touch-none font-sans">
       
-      {/* Animated Stars */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Animated Stars - Moved to Z-INDEX 15 to be in FRONT of the card but behind content if needed */}
+      <div className="absolute inset-0 pointer-events-none z-[15]">
         {stars.map(star => (
           <Star key={star.id} style={star} />
         ))}
@@ -65,9 +65,9 @@ export default function Home() {
 
       <main className="flex-1 flex flex-col items-center justify-center p-6 relative z-10 max-w-md mx-auto w-full">
         
-        <div className="w-full bg-black/20 backdrop-blur-md rounded-[3rem] p-10 sm:p-12 flex flex-col items-center shadow-[0_0_80px_rgba(0,0,0,0.6)] border border-white/10 relative overflow-hidden">
-          {/* Subtle inner glow for the card */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] to-transparent pointer-events-none"></div>
+        <div className="w-full bg-transparent rounded-[3rem] p-10 sm:p-12 flex flex-col items-center relative overflow-hidden z-20">
+          {/* Transparent card with border and shadow */}
+          <div className="absolute inset-0 bg-white/[0.01] pointer-events-none rounded-[3rem] border border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.4)] z-[-1]"></div>
           
           {/* Photo Frame */}
           <div className="relative mb-10">
