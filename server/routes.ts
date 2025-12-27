@@ -60,7 +60,6 @@ async function seedMessages() {
       timeZone: "Europe/Berlin",
   });
   
-  // Check if we have a message for today (Dec 27 2025 ideally, or just "today")
   const existing = await storage.getMessageByDate(berlinDate);
   if (!existing) {
     console.log(`Seeding message for ${berlinDate}`);
