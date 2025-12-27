@@ -72,79 +72,75 @@ export default function Home() {
         ))}
       </motion.div>
 
-      <main className="flex-1 flex flex-col items-center justify-between px-3 py-6 relative z-10 w-full">
+      <main className="flex-1 flex flex-col items-center w-full px-4 relative z-10">
         
+        {/* Photo with Glow */}
         <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-          className="w-full h-full bg-transparent rounded-3xl px-6 py-8 flex flex-col items-center justify-between relative overflow-hidden z-20"
+          transition={{ delay: 0.2, duration: 1 }}
+          className="pt-8 pb-4 flex-shrink-0"
         >
-          {/* Transparent card with border and shadow */}
-          <div className="absolute inset-0 bg-white/[0.01] pointer-events-none rounded-3xl border border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.4)] z-[-1]"></div>
-          
-          {/* 1. Photo Frame */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 1 }}
-            className="relative flex-shrink-0"
-          >
-            <div className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-[6px] border-white/5 shadow-2xl">
-              <img 
-                src={coupleImg} 
-                alt="Us" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
+          <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-white/10 shadow-[0_0_40px_rgba(242,201,76,0.4)]">
+            <img 
+              src={coupleImg} 
+              alt="Us" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
 
-          {/* 2. Header */}
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-center space-y-2 flex-shrink-0"
-          >
-            <h1 className="text-2xl sm:text-3xl font-normal text-white/80 tracking-wide">
-              Мы с бусинкой вместе:
-            </h1>
-            <div className="flex items-baseline justify-center gap-2">
-              <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c] tracking-tight">
-                {daysTogether}
-              </span>
-              <span className="text-4xl sm:text-5xl font-bold text-[#f2c94c] tracking-tight">
-                дней
-              </span>
-            </div>
-          </motion.div>
+        {/* Title - small and clean */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="pb-2 text-center flex-shrink-0"
+        >
+          <p className="text-sm sm:text-base text-white/60 font-normal tracking-wide">
+            Мы вместе:
+          </p>
+        </motion.div>
 
-          {/* 3. Detailed Counter */}
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-            className="w-full flex-shrink-0"
-          >
-            <AnniversaryCounter />
-          </motion.div>
+        {/* Hero Days Count - MAIN FOCUS */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="py-4 flex-shrink-0 text-center"
+        >
+          <div className="text-7xl sm:text-8xl font-bold text-[#f2c94c] tracking-tight leading-none" style={{ textShadow: '0 0 20px rgba(242, 201, 76, 0.5)' }}>
+            {daysTogether}
+          </div>
+          <p className="text-white/70 text-sm sm:text-base mt-2 font-light tracking-widest">ДНЕЙ</p>
+        </motion.div>
 
-          <motion.div 
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ delay: 1.1, duration: 1 }}
-            className="w-full h-[1px] bg-white/5 flex-shrink-0 origin-center" 
-          />
+        {/* Detailed Counter - Smaller, Lower Opacity */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="py-3 flex-shrink-0 opacity-60"
+        >
+          <AnniversaryCounter />
+        </motion.div>
 
-          {/* 4. Daily Card */}
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.4, duration: 0.8 }}
-            className="w-full flex-1 flex flex-col"
-          >
-            <DailyMessage />
-          </motion.div>
+        {/* Divider */}
+        <motion.div 
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
+          className="w-24 h-px bg-white/10 my-4 flex-shrink-0"
+        />
+
+        {/* Daily Message Card - Glassmorphism, Flexible */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+          className="w-full max-w-sm flex-1 flex flex-col px-4 pb-8"
+        >
+          <DailyMessage />
         </motion.div>
 
       </main>
