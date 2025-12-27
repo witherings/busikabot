@@ -64,7 +64,14 @@ export async function registerRoutes(
         return res.status(400).json({ message: "Telegram chat ID not configured" });
       }
 
-      const text = `${input.time}\n-----\n${input.message}`;
+      const now = new Date();
+      const berlinTime = now.toLocaleTimeString("ru-RU", {
+        timeZone: "Europe/Berlin",
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      });
+      const text = `Отправлено в ${berlinTime} (Берлин)\n${input.time}\n-----\n${input.message}`;
       const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
       const response = await fetch(url, {
