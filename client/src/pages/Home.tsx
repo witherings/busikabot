@@ -65,7 +65,10 @@ export default function Home() {
 
       <main className="flex-1 flex flex-col items-center justify-center p-6 relative z-10 max-w-md mx-auto w-full">
         
-        <div className="w-full bg-white/[0.03] backdrop-blur-md rounded-[3rem] p-10 sm:p-12 flex flex-col items-center shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/[0.05]">
+        <div className="w-full bg-black/20 backdrop-blur-md rounded-[3rem] p-10 sm:p-12 flex flex-col items-center shadow-[0_0_80px_rgba(0,0,0,0.6)] border border-white/10 relative overflow-hidden">
+          {/* Subtle inner glow for the card */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.02] to-transparent pointer-events-none"></div>
+          
           {/* Photo Frame */}
           <div className="relative mb-10">
             <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-[8px] border-white/5 shadow-2xl">
