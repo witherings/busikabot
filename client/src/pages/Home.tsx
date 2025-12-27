@@ -76,7 +76,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-[100dvh] w-screen bg-[#050b1a] text-foreground flex flex-col relative overflow-hidden font-sans">
+    <div className="h-[100dvh] w-screen bg-[#050b1a] text-foreground flex flex-col relative overflow-hidden font-sans">
       
       {/* Animated Stars */}
       <motion.div 
@@ -90,7 +90,7 @@ export default function Home() {
         ))}
       </motion.div>
 
-      <main className="flex-1 flex flex-col items-center px-6 py-12 relative z-10 w-full max-w-lg mx-auto overflow-y-auto space-y-12">
+      <main className="h-full flex flex-col items-center justify-between px-6 py-8 relative z-10 w-full max-w-lg mx-auto overflow-hidden">
         
         {/* 1. Photo Frame */}
         <motion.div 
@@ -99,7 +99,7 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 1 }}
           className="relative flex-shrink-0"
         >
-          <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary shadow-[0_0_30px_rgba(234,179,8,0.2)]">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary shadow-[0_0_20px_rgba(234,179,8,0.2)]">
             <img 
               src={coupleImg} 
               alt="Us" 
@@ -112,17 +112,17 @@ export default function Home() {
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-center w-full pt-4"
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="text-center w-full"
         >
-          <h1 className="text-2xl font-light text-white/70 tracking-widest mb-6 uppercase">
+          <h1 className="text-xl font-light text-white/70 tracking-widest mb-2 uppercase">
             Мы вместе:
           </h1>
           <div className="flex items-center justify-center gap-4">
-            <span className="text-8xl font-light text-primary gold-glow leading-none">
+            <span className="text-7xl font-light text-primary gold-glow leading-none">
               {daysTogether}
             </span>
-            <span className="text-3xl font-light text-primary/80 tracking-tight self-end pb-2">
+            <span className="text-2xl font-light text-primary/80 tracking-tight self-end pb-1">
               дней
             </span>
           </div>
@@ -132,7 +132,7 @@ export default function Home() {
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
           className="w-full flex-shrink-0"
         >
           <AnniversaryCounter />
@@ -142,7 +142,7 @@ export default function Home() {
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.1, duration: 0.8 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
           className="w-full flex-shrink-0"
         >
           <DailyMessage />
@@ -152,14 +152,14 @@ export default function Home() {
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4, duration: 0.8 }}
-          className="w-full flex-shrink-0 pt-4"
+          transition={{ delay: 1, duration: 0.8 }}
+          className="w-full flex-shrink-0"
         >
           <Button
             onClick={handleSendToTelegram}
             disabled={isPending}
             variant="outline"
-            className="w-full glass-card hover-elevate active-elevate-2 text-primary border-primary/30 text-lg font-light tracking-widest h-16 rounded-full transition-all duration-300 hover:border-primary/60 hover:bg-primary/5"
+            className="w-full glass-card hover-elevate active-elevate-2 text-primary border-primary/30 text-lg font-light tracking-widest h-14 rounded-full transition-all duration-300 hover:border-primary/60 hover:bg-primary/5"
             data-testid="button-send-telegram"
           >
             {isPending ? "Отправляю..." : "ЖМЯК"}
