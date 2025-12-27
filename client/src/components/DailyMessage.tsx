@@ -46,18 +46,19 @@ export function DailyMessage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
-        className="space-y-6"
+        className="space-y-3"
       >
-        <p className="text-xl sm:text-2xl font-normal italic leading-relaxed text-white/90 text-center relative z-10">
+        <p className="text-sm sm:text-base font-normal italic leading-snug text-white/90 text-center relative z-10">
           "{displayContent}"
         </p>
 
-        <div className="pt-4 border-t border-white/10">
+        <div className="pt-2 border-t border-white/10">
           <Button
             onClick={handleSendToTelegram}
             disabled={isPending}
             variant="outline"
-            className="w-full text-white/80"
+            size="sm"
+            className="w-full text-white/80 text-xs sm:text-sm"
             data-testid="button-send-telegram"
           >
             {isPending ? "Отправляю..." : "Жмякни меня"}

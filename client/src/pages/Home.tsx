@@ -58,7 +58,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-auto touch-none font-sans">
+    <div className="h-screen w-screen bg-gradient-to-b from-[#050b1a] via-[#0a1428] to-[#050b1a] text-foreground flex flex-col relative overflow-hidden fixed inset-0 touch-none font-sans">
       
       {/* Animated Stars */}
       <motion.div 
@@ -72,25 +72,25 @@ export default function Home() {
         ))}
       </motion.div>
 
-      <main className="flex flex-col items-center justify-center p-6 relative z-10 max-w-md mx-auto w-full py-12">
+      <main className="flex-1 flex flex-col items-center justify-center p-4 relative z-10 max-w-md mx-auto w-full overflow-y-auto">
         
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-          className="w-full bg-transparent rounded-[3rem] p-10 sm:p-12 flex flex-col items-center relative overflow-hidden z-20"
+          className="w-full bg-transparent rounded-3xl p-6 flex flex-col items-center relative overflow-hidden z-20"
         >
           {/* Transparent card with border and shadow */}
-          <div className="absolute inset-0 bg-white/[0.01] pointer-events-none rounded-[3rem] border border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.4)] z-[-1]"></div>
+          <div className="absolute inset-0 bg-white/[0.01] pointer-events-none rounded-3xl border border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.4)] z-[-1]"></div>
           
           {/* 1. Photo Frame */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 1 }}
-            className="relative mb-6"
+            className="relative mb-3"
           >
-            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-[8px] border-white/5 shadow-2xl">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-[6px] border-white/5 shadow-2xl">
               <img 
                 src={coupleImg} 
                 alt="Us" 
@@ -104,16 +104,16 @@ export default function Home() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-center space-y-4 mb-8"
+            className="text-center space-y-2 mb-4"
           >
-            <h1 className="text-3xl sm:text-4xl font-normal text-white/80 tracking-wide">
+            <h1 className="text-xl sm:text-2xl font-normal text-white/80 tracking-wide">
               Мы с бусинкой вместе:
             </h1>
-            <div className="flex items-baseline justify-center gap-3">
-              <span className="text-5xl sm:text-6xl font-bold text-[#f2c94c] tracking-tight">
+            <div className="flex items-baseline justify-center gap-2">
+              <span className="text-3xl sm:text-4xl font-bold text-[#f2c94c] tracking-tight">
                 {daysTogether}
               </span>
-              <span className="text-5xl sm:text-6xl font-bold text-[#f2c94c] tracking-tight">
+              <span className="text-3xl sm:text-4xl font-bold text-[#f2c94c] tracking-tight">
                 дней
               </span>
             </div>
@@ -124,7 +124,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="w-full mb-12"
+            className="w-full mb-3"
           >
             <AnniversaryCounter />
           </motion.div>
@@ -133,7 +133,7 @@ export default function Home() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ delay: 1.1, duration: 1 }}
-            className="w-full h-[1px] bg-white/5 mb-10 origin-center" 
+            className="w-full h-[1px] bg-white/5 mb-3 origin-center" 
           />
 
           {/* 4. Daily Card */}
