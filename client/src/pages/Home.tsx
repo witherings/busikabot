@@ -77,7 +77,6 @@ export default function Home() {
 
   return (
     <div className="h-[100dvh] w-screen bg-[#050b1a] text-foreground flex flex-col relative overflow-hidden font-sans">
-      
       {/* Animated Stars */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -89,7 +88,6 @@ export default function Home() {
           <Star key={star.id} style={star} />
         ))}
       </motion.div>
-
       <main className="h-full flex flex-col items-center justify-between px-6 py-8 relative z-10 w-full max-w-lg mx-auto overflow-hidden">
         
         {/* 1. Photo Frame */}
@@ -122,7 +120,7 @@ export default function Home() {
             <span className="text-7xl font-light text-primary gold-glow leading-none [text-shadow:0_0_30px_rgba(234,179,8,0.5)]">
               {daysTogether}
             </span>
-            <span className="text-4xl font-light text-primary gold-glow tracking-tight self-end pb-1 [text-shadow:0_0_30px_rgba(234,179,8,0.5)]">
+            <span className="text-4xl font-light text-primary gold-glow tracking-tight self-end [text-shadow:0_0_30px_rgba(234,179,8,0.5)] pt-[25px] pb-[25px]">
               дней
             </span>
           </div>
