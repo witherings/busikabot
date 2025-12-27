@@ -23,10 +23,10 @@ interface TimeBlockProps {
 function TimeBlock({ value, label }: TimeBlockProps) {
   return (
     <div className="flex flex-col items-center flex-1 min-w-0">
-      <span className="text-2xl sm:text-3xl font-bold text-white tabular-nums leading-none mb-1">
+      <span className="text-3xl sm:text-4xl font-bold text-white tabular-nums leading-none mb-1">
         {String(value).padStart(2, '0')}
       </span>
-      <span className="text-[9px] uppercase tracking-[0.08em] text-white/40 font-medium">
+      <span className="text-[10px] uppercase tracking-[0.08em] text-white/40 font-medium">
         {label}
       </span>
     </div>
@@ -48,13 +48,13 @@ export function AnniversaryCounter() {
   }, []);
 
   return (
-    <div className="w-full space-y-4">
-      <div className="flex justify-between w-full max-w-[280px] mx-auto gap-3">
+    <div className="w-full space-y-3">
+      <div className="flex justify-between w-full gap-2">
         <TimeBlock value={duration.years || 0} label="года" />
         <TimeBlock value={duration.months || 0} label="месяцев" />
         <TimeBlock value={duration.days || 0} label="дней" />
       </div>
-      <div className="flex justify-between w-full max-w-[280px] mx-auto gap-3">
+      <div className="flex justify-between w-full gap-2">
         <TimeBlock value={duration.hours || 0} label="час" />
         <TimeBlock value={duration.minutes || 0} label="минут" />
         <TimeBlock value={duration.seconds || 0} label="секунды" />
