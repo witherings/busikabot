@@ -83,8 +83,8 @@ export default function Home() {
           </div>
 
           <div className="text-center space-y-4 mb-10">
-            <h1 className="text-xl sm:text-2xl font-normal text-white/80 tracking-wide">
-              Мы с бусинкой вместе уже
+            <h1 className="text-2xl sm:text-3xl font-normal text-white/80 tracking-wide">
+              Мы с бусинкой вместе
             </h1>
             <div className="flex items-baseline justify-center gap-3">
               <span className="text-5xl sm:text-6xl font-bold text-[#f2c94c] tracking-tight">
