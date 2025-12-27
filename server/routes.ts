@@ -54,10 +54,14 @@ export async function registerRoutes(
     try {
       const input = api.messages.sendTelegram.input.parse(req.body);
       const botToken = process.env.TELEGRAM_BOT_TOKEN;
-      const chatId = process.env.TELEGRAM_CHAT_ID || "me";
+      const chatId = process.env.TELEGRAM_CHAT_ID;
 
       if (!botToken) {
         return res.status(400).json({ message: "Telegram bot token not configured" });
+      }
+
+      if (!chatId) {
+        return res.status(400).json({ message: "Telegram chat ID not configured" });
       }
 
       const text = `${input.time}\n-----\n${input.message}`;
@@ -73,6 +77,8 @@ export async function registerRoutes(
       });
 
       if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        console.error("Telegram API error:", errorData);
         throw new Error(`Telegram API error: ${response.statusText}`);
       }
 
