@@ -1,5 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { api, type CreateMessageRequest } from "@shared/routes";
+import { api } from "@shared/routes";
+import type { CreateMessageRequest } from "@shared/schema";
 
 export function useTodayMessage() {
   return useQuery({
