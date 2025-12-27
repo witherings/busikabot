@@ -40,7 +40,7 @@ export function DailyMessage() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="w-full max-w-sm mx-auto p-6 rounded-2xl bg-white/[0.02] border border-white/5 shadow-xl relative overflow-hidden"
+      className="w-full max-w-sm mx-auto p-4 rounded-2xl bg-white/[0.02] border border-white/5 shadow-xl relative overflow-hidden"
     >
       <motion.div
         initial={{ opacity: 0 }}
