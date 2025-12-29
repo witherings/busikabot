@@ -10,7 +10,12 @@ type Duration = {
   seconds?: number;
 };
 
-const START_DATE = new Date(2024, 11, 31);
+// Start date: Dec 31, 2024, 00:00:00 Berlin time
+const START_DATE = new Date(2024, 11, 31, 0, 0, 0);
+
+function getBerlinTime(date: Date) {
+  return new Date(date.toLocaleString("en-US", { timeZone: "Europe/Berlin" }));
+}
 
 interface TimeBlockProps {
   value: number;
@@ -32,12 +37,18 @@ function TimeBlock({ value, label }: TimeBlockProps) {
 
 export function AnniversaryCounter() {
   const [duration, setDuration] = useState<Duration>(() => 
-    intervalToDuration({ start: START_DATE, end: new Date() })
+    intervalToDuration({ 
+      start: getBerlinTime(START_DATE), 
+      end: getBerlinTime(new Date()) 
+    })
   );
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setDuration(intervalToDuration({ start: START_DATE, end: new Date() }));
+      setDuration(intervalToDuration({ 
+        start: getBerlinTime(START_DATE), 
+        end: getBerlinTime(new Date()) 
+      }));
     }, 1000);
     return () => clearInterval(timer);
   }, []);
