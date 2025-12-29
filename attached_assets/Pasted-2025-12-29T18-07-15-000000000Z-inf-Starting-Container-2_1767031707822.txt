@@ -1,0 +1,265 @@
+2025-12-29T18:07:15.000000000Z [inf]  Starting Container
+2025-12-29T18:07:15.984000264Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:15.984008616Z [inf]  
+2025-12-29T18:07:15.984016443Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:15.984023520Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:15.984031901Z [inf]  
+2025-12-29T18:07:15.984052947Z [err]  node:internal/url:1610
+2025-12-29T18:07:15.984061342Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:15.984071148Z [err]      ^
+2025-12-29T18:07:15.984080068Z [err]  
+2025-12-29T18:07:15.984089111Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:15.984097598Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:15.984105921Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:15.984114851Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:15.984123466Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:15.984132469Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:15.984140925Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:15.984149780Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:15.984159161Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:15.984171851Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:15.984182754Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:15.984190985Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:15.984200075Z [err]  }
+2025-12-29T18:07:15.984210426Z [err]  
+2025-12-29T18:07:15.984221283Z [err]  Node.js v22.21.1
+2025-12-29T18:07:16.686383955Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:16.723398711Z [inf]  
+2025-12-29T18:07:16.723403290Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:16.723407981Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:16.723412309Z [inf]  
+2025-12-29T18:07:16.985131695Z [err]  node:internal/url:1610
+2025-12-29T18:07:16.985138533Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:16.985142673Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:16.985147119Z [err]      ^
+2025-12-29T18:07:16.985154040Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:16.985163552Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:16.985164730Z [err]  
+2025-12-29T18:07:16.985173753Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:16.985178160Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:16.985180661Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:16.985184052Z [err]  Node.js v22.21.1
+2025-12-29T18:07:16.985196289Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:16.985198895Z [err]  }
+2025-12-29T18:07:16.985207366Z [err]  
+2025-12-29T18:07:16.985239545Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:16.985251230Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:16.985255468Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:16.985261476Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:16.985271233Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:17.968926467Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:17.968934791Z [inf]  
+2025-12-29T18:07:17.968947181Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:17.968953278Z [inf]  
+2025-12-29T18:07:17.968959008Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:18.018574920Z [err]  node:internal/url:1610
+2025-12-29T18:07:18.018578754Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:18.018581655Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:18.018586637Z [err]      ^
+2025-12-29T18:07:18.018593248Z [err]  
+2025-12-29T18:07:18.018593857Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:18.018599170Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:18.018604477Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:18.018609724Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:18.018614532Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:18.018616357Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:18.018622457Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:18.018625965Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:18.018629510Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:18.018633324Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:18.018639717Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:18.018644621Z [err]  }
+2025-12-29T18:07:18.018649547Z [err]  
+2025-12-29T18:07:18.018655567Z [err]  Node.js v22.21.1
+2025-12-29T18:07:18.766472189Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:18.954462326Z [err]  
+2025-12-29T18:07:18.954473789Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:18.954481951Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:18.954490636Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:18.954499569Z [inf]  
+2025-12-29T18:07:18.954502297Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:18.954512747Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:18.954516935Z [err]  }
+2025-12-29T18:07:18.954522721Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:18.954525473Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:18.954532472Z [err]  
+2025-12-29T18:07:18.954538673Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:18.954539786Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:18.954548803Z [inf]  
+2025-12-29T18:07:18.954552110Z [err]  Node.js v22.21.1
+2025-12-29T18:07:18.954556468Z [err]  node:internal/url:1610
+2025-12-29T18:07:18.954560171Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:18.954563750Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:18.954571684Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:18.954572301Z [err]      ^
+2025-12-29T18:07:18.954578068Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:18.954587186Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:18.954594533Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:19.709026700Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:19.739640246Z [inf]  
+2025-12-29T18:07:19.739645252Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:19.739650808Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:19.739656567Z [inf]  
+2025-12-29T18:07:19.965362781Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:19.965378816Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:19.965387095Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:19.965394413Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:19.965401986Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:19.965409796Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:19.965417064Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:19.965424305Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:19.965433734Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:19.965441849Z [err]  }
+2025-12-29T18:07:19.965450571Z [err]  
+2025-12-29T18:07:19.965457839Z [err]  Node.js v22.21.1
+2025-12-29T18:07:19.965462140Z [err]  node:internal/url:1610
+2025-12-29T18:07:19.965467355Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:19.965471849Z [err]      ^
+2025-12-29T18:07:19.965477222Z [err]  
+2025-12-29T18:07:19.965483182Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:19.965487702Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:19.965492909Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:21.529509431Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:21.580832365Z [inf]  
+2025-12-29T18:07:21.580839793Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:21.580847552Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:21.580855609Z [inf]  
+2025-12-29T18:07:21.732781743Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:21.732790329Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:21.732796133Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:21.732800960Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:21.732805995Z [err]  }
+2025-12-29T18:07:21.732811809Z [err]  
+2025-12-29T18:07:21.732817587Z [err]  Node.js v22.21.1
+2025-12-29T18:07:21.732821348Z [err]  node:internal/url:1610
+2025-12-29T18:07:21.732826210Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:21.732830660Z [err]      ^
+2025-12-29T18:07:21.732835770Z [err]  
+2025-12-29T18:07:21.732840485Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:21.732845834Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:21.732850765Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:21.732855777Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:21.732860352Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:21.732865307Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:21.732869700Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:21.732874473Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:23.320389379Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:23.354515378Z [inf]  
+2025-12-29T18:07:23.354521662Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:23.354526592Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:23.354531292Z [inf]  
+2025-12-29T18:07:23.473833316Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:23.473844233Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:23.473850473Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:23.473857157Z [err]  node:internal/url:1610
+2025-12-29T18:07:23.473857158Z [err]  }
+2025-12-29T18:07:23.473864125Z [err]  
+2025-12-29T18:07:23.473865891Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:23.473872208Z [err]  Node.js v22.21.1
+2025-12-29T18:07:23.473873172Z [err]      ^
+2025-12-29T18:07:23.473879033Z [err]  
+2025-12-29T18:07:23.473884218Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:23.473892895Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:23.473897840Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:23.473902468Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:23.473907430Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:23.473912394Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:23.473917055Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:23.473922465Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:23.473926768Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:24.333322553Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:24.360522890Z [inf]  
+2025-12-29T18:07:24.360530573Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:24.360536253Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:24.360542636Z [inf]  
+2025-12-29T18:07:24.484799431Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:24.484808294Z [err]  }
+2025-12-29T18:07:24.484814561Z [err]  
+2025-12-29T18:07:24.484820579Z [err]  Node.js v22.21.1
+2025-12-29T18:07:24.484844216Z [err]  node:internal/url:1610
+2025-12-29T18:07:24.484853026Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:24.484861791Z [err]      ^
+2025-12-29T18:07:24.484870488Z [err]  
+2025-12-29T18:07:24.484881436Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:24.484889741Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:24.484898217Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:24.484905817Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:24.484913029Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:24.484921012Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:24.484929102Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:24.484936944Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:24.484944290Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:24.484952457Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:24.484960062Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:25.250700091Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:25.286734867Z [inf]  
+2025-12-29T18:07:25.286743281Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:25.286750224Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:25.286757464Z [inf]  
+2025-12-29T18:07:25.403505191Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:25.403508396Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:25.403516283Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:25.403524716Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:25.403527728Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:25.403534081Z [err]  node:internal/url:1610
+2025-12-29T18:07:25.403536914Z [err]  }
+2025-12-29T18:07:25.403537275Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:25.403543173Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:25.403546273Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:25.403549836Z [err]  
+2025-12-29T18:07:25.403552981Z [err]      ^
+2025-12-29T18:07:25.403555331Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:25.403560505Z [err]  Node.js v22.21.1
+2025-12-29T18:07:25.403565042Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:25.403567410Z [err]  
+2025-12-29T18:07:25.403573798Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:25.403575409Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:25.403581035Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:26.208875416Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:26.255963680Z [inf]  
+2025-12-29T18:07:26.255970858Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:26.255975728Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:26.255981070Z [inf]  
+2025-12-29T18:07:26.416432413Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:26.416441877Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:26.416449426Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:26.416454867Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+2025-12-29T18:07:26.416460338Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:26.416464727Z [err]  node:internal/url:1610
+2025-12-29T18:07:26.416467920Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:26.416474387Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:26.416475745Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:26.416480988Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:26.416487097Z [err]  }
+2025-12-29T18:07:26.416487112Z [err]      ^
+2025-12-29T18:07:26.416497583Z [err]  
+2025-12-29T18:07:26.416497906Z [err]  
+2025-12-29T18:07:26.416507403Z [err]  Node.js v22.21.1
+2025-12-29T18:07:26.416509778Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:26.416517734Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:26.416524866Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:26.416537325Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:27.205484812Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-29T18:07:27.238576674Z [inf]  
+2025-12-29T18:07:27.238583166Z [inf]  > rest-express@1.0.0 start
+2025-12-29T18:07:27.238588362Z [inf]  > NODE_ENV=production node dist/index.cjs
+2025-12-29T18:07:27.238593193Z [inf]  
+2025-12-29T18:07:27.375110960Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2025-12-29T18:07:27.375123433Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-12-29T18:07:27.375132270Z [err]      at node:internal/main/run_main_module:36:49 {
+2025-12-29T18:07:27.375141140Z [err]    code: 'ERR_INVALID_ARG_TYPE'
+2025-12-29T18:07:27.375144685Z [err]  node:internal/url:1610
+2025-12-29T18:07:27.375152667Z [err]      throw new ERR_INVALID_ARG_TYPE('path', ['string', 'URL'], path);
+2025-12-29T18:07:27.375153354Z [err]  }
+2025-12-29T18:07:27.375159805Z [err]      ^
+2025-12-29T18:07:27.375165805Z [err]  
+2025-12-29T18:07:27.375167097Z [err]  
+2025-12-29T18:07:27.375173725Z [err]  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of URL. Received undefined
+2025-12-29T18:07:27.375177707Z [err]  Node.js v22.21.1
+2025-12-29T18:07:27.375180382Z [err]      at fileURLToPath (node:internal/url:1610:11)
+2025-12-29T18:07:27.375185124Z [err]      at Object.<anonymous> (/app/dist/index.cjs:70:99979)
+2025-12-29T18:07:27.375190392Z [err]      at Module._compile (node:internal/modules/cjs/loader:1706:14)
+2025-12-29T18:07:27.375195311Z [err]      at Object..js (node:internal/modules/cjs/loader:1839:10)
+2025-12-29T18:07:27.375200215Z [err]      at Module.load (node:internal/modules/cjs/loader:1441:32)
+2025-12-29T18:07:27.375205147Z [err]      at Function._load (node:internal/modules/cjs/loader:1263:12)
+2025-12-29T18:07:27.375212067Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:328:14)
