@@ -10,7 +10,7 @@ export function DailyMessage() {
     );
   }
 
-  const displayContent = message?.content || "Каждый день с тобой — это подарок.";
+  const displayContent = message?.content || "Я тебя очень сильно люблю ❤️";
 
   return (
     <motion.div 
