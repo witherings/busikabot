@@ -1,6 +1,12 @@
 import { drizzle } from "drizzle-orm/node-postgres";
+import { migrate } from "drizzle-orm/node-postgres/migrator";
 import pg from "pg";
 import * as schema from "@shared/schema";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const { Pool } = pg;
 
@@ -12,3 +18,10 @@ if (!process.env.DATABASE_URL) {
 
 export const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 export const db = drizzle(pool, { schema });
+
+export async function runMigrations() {
+  const migrationsFolder = path.join(__dirname, "..", "drizzle");
+  console.log(`Running migrations from ${migrationsFolder}...`);
+  await migrate(db, { migrationsFolder });
+  console.log("Migrations completed successfully.");
+}
