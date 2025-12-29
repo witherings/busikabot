@@ -1,0 +1,1001 @@
+2025-12-29T18:15:13.414351830Z [err]    length: 107,
+2025-12-29T18:15:13.414354998Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:13.414357486Z [err]    severity: 'ERROR',
+2025-12-29T18:15:13.414361821Z [err]  }
+2025-12-29T18:15:13.414363606Z [err]    code: '42P01',
+2025-12-29T18:15:13.414368157Z [err]    detail: undefined,
+2025-12-29T18:15:13.414374452Z [err]    hint: undefined,
+2025-12-29T18:15:13.414378416Z [err]    position: '45',
+2025-12-29T18:15:13.414382428Z [err]    internalPosition: undefined,
+2025-12-29T18:15:13.414386327Z [err]    internalQuery: undefined,
+2025-12-29T18:15:13.414390023Z [err]    where: undefined,
+2025-12-29T18:15:13.414394141Z [err]    schema: undefined,
+2025-12-29T18:15:13.414397743Z [err]    table: undefined,
+2025-12-29T18:15:14.183094406Z [err]    position: '45',
+2025-12-29T18:15:14.183102783Z [err]  Failed to seed message for 2025-01-23: error: relation "messages" does not exist
+2025-12-29T18:15:14.183106194Z [err]    internalPosition: undefined,
+2025-12-29T18:15:14.183110664Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:14.183115966Z [err]    internalQuery: undefined,
+2025-12-29T18:15:14.183119195Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:14.183124377Z [err]    where: undefined,
+2025-12-29T18:15:14.183124900Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:14.183130260Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:14.183133664Z [err]    schema: undefined,
+2025-12-29T18:15:14.183136411Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:14.183142508Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:14.183143586Z [err]    table: undefined,
+2025-12-29T18:15:14.183147629Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:14.183152039Z [err]    column: undefined,
+2025-12-29T18:15:14.183154627Z [err]    length: 107,
+2025-12-29T18:15:14.183161164Z [err]    dataType: undefined,
+2025-12-29T18:15:14.183161174Z [err]    severity: 'ERROR',
+2025-12-29T18:15:14.183166929Z [err]    code: '42P01',
+2025-12-29T18:15:14.183170687Z [err]    constraint: undefined,
+2025-12-29T18:15:14.183172201Z [err]    detail: undefined,
+2025-12-29T18:15:14.183177366Z [err]    hint: undefined,
+2025-12-29T18:15:14.183179953Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:14.183186490Z [err]    line: '1449',
+2025-12-29T18:15:14.183195396Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:14.183202271Z [err]  }
+2025-12-29T18:15:15.192738851Z [err]    dataType: undefined,
+2025-12-29T18:15:15.192742578Z [err]    line: '1449',
+2025-12-29T18:15:15.192750155Z [err]    constraint: undefined,
+2025-12-29T18:15:15.192753615Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:15.192759852Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:15.192762142Z [err]  }
+2025-12-29T18:15:15.192823737Z [err]    internalPosition: undefined,
+2025-12-29T18:15:15.192838402Z [err]    internalQuery: undefined,
+2025-12-29T18:15:15.192846767Z [err]    where: undefined,
+2025-12-29T18:15:15.192854397Z [err]  Failed to seed message for 2025-01-24: error: relation "messages" does not exist
+2025-12-29T18:15:15.192856193Z [err]    schema: undefined,
+2025-12-29T18:15:15.192861891Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:15.192869449Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:15.192871374Z [err]    table: undefined,
+2025-12-29T18:15:15.192877542Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:15.192881335Z [err]    column: undefined,
+2025-12-29T18:15:15.192885678Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:15.192891531Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:15.192899808Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:15.192906267Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:15.192912106Z [err]    length: 107,
+2025-12-29T18:15:15.192918402Z [err]    severity: 'ERROR',
+2025-12-29T18:15:15.192924574Z [err]    code: '42P01',
+2025-12-29T18:15:15.192931669Z [err]    detail: undefined,
+2025-12-29T18:15:15.192938268Z [err]    hint: undefined,
+2025-12-29T18:15:15.192943994Z [err]    position: '45',
+2025-12-29T18:15:15.872234972Z [err]    table: undefined,
+2025-12-29T18:15:15.872235780Z [err]  Failed to seed message for 2025-01-25: error: relation "messages" does not exist
+2025-12-29T18:15:15.872248175Z [err]    column: undefined,
+2025-12-29T18:15:15.872249881Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:15.872253336Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:15.872257571Z [err]    dataType: undefined,
+2025-12-29T18:15:15.872261100Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:15.872266580Z [err]    constraint: undefined,
+2025-12-29T18:15:15.872268184Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:15.872268457Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:15.872275894Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:15.872276089Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:15.872280360Z [err]    length: 107,
+2025-12-29T18:15:15.872283095Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:15.872285701Z [err]    line: '1449',
+2025-12-29T18:15:15.872291759Z [err]    severity: 'ERROR',
+2025-12-29T18:15:15.872294703Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:15.872302054Z [err]    code: '42P01',
+2025-12-29T18:15:15.872302975Z [err]  }
+2025-12-29T18:15:15.872311618Z [err]    detail: undefined,
+2025-12-29T18:15:15.872320109Z [err]    hint: undefined,
+2025-12-29T18:15:15.872330231Z [err]    position: '45',
+2025-12-29T18:15:15.872338833Z [err]    internalPosition: undefined,
+2025-12-29T18:15:15.872346358Z [err]    internalQuery: undefined,
+2025-12-29T18:15:15.872352732Z [err]    where: undefined,
+2025-12-29T18:15:15.872358689Z [err]    schema: undefined,
+2025-12-29T18:15:16.640110346Z [err]  Failed to seed message for 2025-01-26: error: relation "messages" does not exist
+2025-12-29T18:15:16.640117037Z [err]    column: undefined,
+2025-12-29T18:15:16.640119599Z [err]  }
+2025-12-29T18:15:16.640120190Z [err]    length: 107,
+2025-12-29T18:15:16.640124233Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:16.640129674Z [err]    dataType: undefined,
+2025-12-29T18:15:16.640129762Z [err]    internalPosition: undefined,
+2025-12-29T18:15:16.640136018Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:16.640138116Z [err]    severity: 'ERROR',
+2025-12-29T18:15:16.640141022Z [err]    constraint: undefined,
+2025-12-29T18:15:16.640143976Z [err]    internalQuery: undefined,
+2025-12-29T18:15:16.640146049Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:16.640151660Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:16.640151853Z [err]    line: '1449',
+2025-12-29T18:15:16.640152468Z [err]    code: '42P01',
+2025-12-29T18:15:16.640155716Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:16.640157994Z [err]    where: undefined,
+2025-12-29T18:15:16.640165410Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:16.640165779Z [err]    detail: undefined,
+2025-12-29T18:15:16.640169556Z [err]    schema: undefined,
+2025-12-29T18:15:16.640176043Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:16.640180469Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:16.640180535Z [err]    hint: undefined,
+2025-12-29T18:15:16.640181314Z [err]    table: undefined,
+2025-12-29T18:15:16.640185125Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:16.640190914Z [err]    position: '45',
+2025-12-29T18:15:17.549128171Z [err]  Failed to seed message for 2025-01-27: error: relation "messages" does not exist
+2025-12-29T18:15:17.549139707Z [err]    code: '42P01',
+2025-12-29T18:15:17.549140138Z [err]  }
+2025-12-29T18:15:17.549140975Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:17.549144290Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:17.549148820Z [err]    column: undefined,
+2025-12-29T18:15:17.549150289Z [err]    detail: undefined,
+2025-12-29T18:15:17.549156441Z [err]    line: '1449',
+2025-12-29T18:15:17.549157934Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:17.549158489Z [err]    hint: undefined,
+2025-12-29T18:15:17.549160695Z [err]    dataType: undefined,
+2025-12-29T18:15:17.549164814Z [err]    position: '45',
+2025-12-29T18:15:17.549169911Z [err]    constraint: undefined,
+2025-12-29T18:15:17.549170121Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:17.549171433Z [err]    internalPosition: undefined,
+2025-12-29T18:15:17.549175595Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:17.549177389Z [err]    internalQuery: undefined,
+2025-12-29T18:15:17.549185690Z [err]    where: undefined,
+2025-12-29T18:15:17.549187731Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:17.549192108Z [err]    schema: undefined,
+2025-12-29T18:15:17.549197869Z [err]    table: undefined,
+2025-12-29T18:15:17.549199756Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:17.549207934Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:17.549216494Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:17.549225192Z [err]    length: 107,
+2025-12-29T18:15:17.549234299Z [err]    severity: 'ERROR',
+2025-12-29T18:15:18.326732025Z [err]  Failed to seed message for 2025-01-28: error: relation "messages" does not exist
+2025-12-29T18:15:18.326741822Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:18.326745829Z [err]    position: '45',
+2025-12-29T18:15:18.326746026Z [err]    severity: 'ERROR',
+2025-12-29T18:15:18.326749384Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:18.326750909Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:18.326757435Z [err]    code: '42P01',
+2025-12-29T18:15:18.326757473Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:18.326759926Z [err]    internalPosition: undefined,
+2025-12-29T18:15:18.326764541Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:18.326764946Z [err]  }
+2025-12-29T18:15:18.326767428Z [err]    detail: undefined,
+2025-12-29T18:15:18.326771830Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:18.326771949Z [err]    internalQuery: undefined,
+2025-12-29T18:15:18.326773150Z [err]    column: undefined,
+2025-12-29T18:15:18.326777972Z [err]    hint: undefined,
+2025-12-29T18:15:18.326779505Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:18.326782786Z [err]    where: undefined,
+2025-12-29T18:15:18.326786014Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:18.326786561Z [err]    dataType: undefined,
+2025-12-29T18:15:18.326792376Z [err]    length: 107,
+2025-12-29T18:15:18.326793204Z [err]    schema: undefined,
+2025-12-29T18:15:18.326796736Z [err]    constraint: undefined,
+2025-12-29T18:15:18.326804590Z [err]    table: undefined,
+2025-12-29T18:15:18.326807095Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:18.326817715Z [err]    line: '1449',
+2025-12-29T18:15:19.192323418Z [err]    length: 107,
+2025-12-29T18:15:19.192334419Z [err]    severity: 'ERROR',
+2025-12-29T18:15:19.192342540Z [err]    code: '42P01',
+2025-12-29T18:15:19.192349220Z [err]    detail: undefined,
+2025-12-29T18:15:19.192356674Z [err]    hint: undefined,
+2025-12-29T18:15:19.192365442Z [err]    position: '45',
+2025-12-29T18:15:19.192372112Z [err]    internalPosition: undefined,
+2025-12-29T18:15:19.192378762Z [err]    internalQuery: undefined,
+2025-12-29T18:15:19.192387135Z [err]    where: undefined,
+2025-12-29T18:15:19.192394894Z [err]    schema: undefined,
+2025-12-29T18:15:19.192402244Z [err]    table: undefined,
+2025-12-29T18:15:19.192409343Z [err]    column: undefined,
+2025-12-29T18:15:19.192417441Z [err]    dataType: undefined,
+2025-12-29T18:15:19.192424271Z [err]    constraint: undefined,
+2025-12-29T18:15:19.192430075Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:19.192436318Z [err]    line: '1449',
+2025-12-29T18:15:19.192440730Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:19.192445460Z [err]  }
+2025-12-29T18:15:19.192507435Z [err]  Failed to seed message for 2025-01-29: error: relation "messages" does not exist
+2025-12-29T18:15:19.192515912Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:19.192525066Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:19.192534027Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:19.192542926Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:19.192551431Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:19.192559808Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:19.192568051Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:20.009496070Z [err]  Failed to seed message for 2025-01-30: error: relation "messages" does not exist
+2025-12-29T18:15:20.009506227Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:20.009508705Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:20.009508729Z [err]    where: undefined,
+2025-12-29T18:15:20.009515126Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:20.009519576Z [err]  }
+2025-12-29T18:15:20.009522288Z [err]    schema: undefined,
+2025-12-29T18:15:20.009523652Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:20.009528907Z [err]    table: undefined,
+2025-12-29T18:15:20.009531888Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:20.009534985Z [err]    column: undefined,
+2025-12-29T18:15:20.009539514Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:20.009540431Z [err]    dataType: undefined,
+2025-12-29T18:15:20.009545981Z [err]    constraint: undefined,
+2025-12-29T18:15:20.009547879Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:20.009551253Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:20.009555341Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:20.009557416Z [err]    line: '1449',
+2025-12-29T18:15:20.009561564Z [err]    length: 107,
+2025-12-29T18:15:20.009566773Z [err]    severity: 'ERROR',
+2025-12-29T18:15:20.009572281Z [err]    code: '42P01',
+2025-12-29T18:15:20.009577602Z [err]    detail: undefined,
+2025-12-29T18:15:20.009585833Z [err]    hint: undefined,
+2025-12-29T18:15:20.009591082Z [err]    position: '45',
+2025-12-29T18:15:20.009596954Z [err]    internalPosition: undefined,
+2025-12-29T18:15:20.009602318Z [err]    internalQuery: undefined,
+2025-12-29T18:15:20.885403297Z [err]    internalPosition: undefined,
+2025-12-29T18:15:20.885417218Z [err]    internalQuery: undefined,
+2025-12-29T18:15:20.885427561Z [err]    where: undefined,
+2025-12-29T18:15:20.885434689Z [err]  Failed to seed message for 2025-01-31: error: relation "messages" does not exist
+2025-12-29T18:15:20.885438694Z [err]    schema: undefined,
+2025-12-29T18:15:20.885440292Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:20.885445090Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:20.885447088Z [err]    table: undefined,
+2025-12-29T18:15:20.885450467Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:20.885454871Z [err]    column: undefined,
+2025-12-29T18:15:20.885455680Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:20.885461971Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:20.885463365Z [err]    dataType: undefined,
+2025-12-29T18:15:20.885468537Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:20.885470546Z [err]    constraint: undefined,
+2025-12-29T18:15:20.885473634Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:20.885478700Z [err]    length: 107,
+2025-12-29T18:15:20.885480198Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:20.885483504Z [err]    severity: 'ERROR',
+2025-12-29T18:15:20.885488555Z [err]    line: '1449',
+2025-12-29T18:15:20.885488931Z [err]    code: '42P01',
+2025-12-29T18:15:20.885494774Z [err]    detail: undefined,
+2025-12-29T18:15:20.885496134Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:20.885500011Z [err]    hint: undefined,
+2025-12-29T18:15:20.885503996Z [err]  }
+2025-12-29T18:15:20.885506728Z [err]    position: '45',
+2025-12-29T18:15:21.565083104Z [err]    schema: undefined,
+2025-12-29T18:15:21.565088151Z [err]  Failed to seed message for 2025-02-01: error: relation "messages" does not exist
+2025-12-29T18:15:21.565102810Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:21.565104163Z [err]    table: undefined,
+2025-12-29T18:15:21.565108571Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:21.565113805Z [err]    column: undefined,
+2025-12-29T18:15:21.565114114Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:21.565120177Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:21.565124347Z [err]    dataType: undefined,
+2025-12-29T18:15:21.565126837Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:21.565132267Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:21.565133598Z [err]    constraint: undefined,
+2025-12-29T18:15:21.565137200Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:21.565142396Z [err]    length: 107,
+2025-12-29T18:15:21.565143652Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:21.565147477Z [err]    severity: 'ERROR',
+2025-12-29T18:15:21.565153615Z [err]    line: '1449',
+2025-12-29T18:15:21.565153837Z [err]    code: '42P01',
+2025-12-29T18:15:21.565159749Z [err]    detail: undefined,
+2025-12-29T18:15:21.565163902Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:21.565165396Z [err]    hint: undefined,
+2025-12-29T18:15:21.565170794Z [err]    position: '45',
+2025-12-29T18:15:21.565173322Z [err]  }
+2025-12-29T18:15:21.565176442Z [err]    internalPosition: undefined,
+2025-12-29T18:15:21.565180767Z [err]    internalQuery: undefined,
+2025-12-29T18:15:21.565185167Z [err]    where: undefined,
+2025-12-29T18:15:22.471145465Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:22.471151002Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:22.471157496Z [err]    internalQuery: undefined,
+2025-12-29T18:15:22.471157749Z [err]  }
+2025-12-29T18:15:22.471163485Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:22.471172139Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:22.471173183Z [err]    where: undefined,
+2025-12-29T18:15:22.471179952Z [err]  Failed to seed message for 2025-02-02: error: relation "messages" does not exist
+2025-12-29T18:15:22.471180166Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:22.471185393Z [err]    schema: undefined,
+2025-12-29T18:15:22.471187284Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:22.471191235Z [err]    length: 107,
+2025-12-29T18:15:22.471193700Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:22.471196770Z [err]    table: undefined,
+2025-12-29T18:15:22.471200429Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:22.471204186Z [err]    severity: 'ERROR',
+2025-12-29T18:15:22.471208386Z [err]    column: undefined,
+2025-12-29T18:15:22.471216778Z [err]    code: '42P01',
+2025-12-29T18:15:22.471219621Z [err]    dataType: undefined,
+2025-12-29T18:15:22.471228638Z [err]    detail: undefined,
+2025-12-29T18:15:22.471229489Z [err]    constraint: undefined,
+2025-12-29T18:15:22.471237725Z [err]    hint: undefined,
+2025-12-29T18:15:22.471240260Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:22.471245511Z [err]    position: '45',
+2025-12-29T18:15:22.471254207Z [err]    line: '1449',
+2025-12-29T18:15:22.471255426Z [err]    internalPosition: undefined,
+2025-12-29T18:15:23.246331168Z [err]  Failed to seed message for 2025-02-03: error: relation "messages" does not exist
+2025-12-29T18:15:23.246340821Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:23.246346360Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:23.246349741Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:23.246357603Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:23.246361122Z [err]  }
+2025-12-29T18:15:23.246363468Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:23.246373922Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:23.246374739Z [err]    position: '45',
+2025-12-29T18:15:23.246380263Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:23.246384443Z [err]    internalPosition: undefined,
+2025-12-29T18:15:23.246386424Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:23.246391965Z [err]    length: 107,
+2025-12-29T18:15:23.246394281Z [err]    internalQuery: undefined,
+2025-12-29T18:15:23.246401569Z [err]    severity: 'ERROR',
+2025-12-29T18:15:23.246402779Z [err]    where: undefined,
+2025-12-29T18:15:23.246411866Z [err]    schema: undefined,
+2025-12-29T18:15:23.246412255Z [err]    code: '42P01',
+2025-12-29T18:15:23.246421440Z [err]    table: undefined,
+2025-12-29T18:15:23.246422062Z [err]    detail: undefined,
+2025-12-29T18:15:23.246429710Z [err]    column: undefined,
+2025-12-29T18:15:23.246432133Z [err]    hint: undefined,
+2025-12-29T18:15:23.246437513Z [err]    dataType: undefined,
+2025-12-29T18:15:23.246445722Z [err]    constraint: undefined,
+2025-12-29T18:15:23.246452429Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:23.246458970Z [err]    line: '1449',
+2025-12-29T18:15:24.026219652Z [err]    internalPosition: undefined,
+2025-12-29T18:15:24.026220132Z [err]  Failed to seed message for 2025-02-04: error: relation "messages" does not exist
+2025-12-29T18:15:24.026230311Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:24.026233715Z [err]    internalQuery: undefined,
+2025-12-29T18:15:24.026239216Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:24.026244225Z [err]    where: undefined,
+2025-12-29T18:15:24.026247984Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:24.026254583Z [err]    schema: undefined,
+2025-12-29T18:15:24.026256275Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:24.026261629Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:24.026263905Z [err]    table: undefined,
+2025-12-29T18:15:24.026267402Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:24.026272494Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:24.026275196Z [err]    column: undefined,
+2025-12-29T18:15:24.026277449Z [err]    length: 107,
+2025-12-29T18:15:24.026282175Z [err]    severity: 'ERROR',
+2025-12-29T18:15:24.026285843Z [err]    dataType: undefined,
+2025-12-29T18:15:24.026286949Z [err]    code: '42P01',
+2025-12-29T18:15:24.026292558Z [err]    detail: undefined,
+2025-12-29T18:15:24.026295498Z [err]    constraint: undefined,
+2025-12-29T18:15:24.026298196Z [err]    hint: undefined,
+2025-12-29T18:15:24.026303481Z [err]    position: '45',
+2025-12-29T18:15:24.026305698Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:24.026314153Z [err]    line: '1449',
+2025-12-29T18:15:24.026322178Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:24.026330474Z [err]  }
+2025-12-29T18:15:24.931888836Z [err]  Failed to seed message for 2025-02-05: error: relation "messages" does not exist
+2025-12-29T18:15:24.931898489Z [err]    table: undefined,
+2025-12-29T18:15:24.931898509Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:24.931905652Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:24.931912156Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:24.931915341Z [err]    column: undefined,
+2025-12-29T18:15:24.931918409Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:24.931923867Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:24.931926648Z [err]    dataType: undefined,
+2025-12-29T18:15:24.931928938Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:24.931933873Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:24.931937164Z [err]    constraint: undefined,
+2025-12-29T18:15:24.931941315Z [err]    length: 107,
+2025-12-29T18:15:24.931948832Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:24.931949403Z [err]    severity: 'ERROR',
+2025-12-29T18:15:24.931958564Z [err]    code: '42P01',
+2025-12-29T18:15:24.931959838Z [err]    line: '1449',
+2025-12-29T18:15:24.931967019Z [err]    detail: undefined,
+2025-12-29T18:15:24.931969958Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:24.931974783Z [err]    hint: undefined,
+2025-12-29T18:15:24.931979995Z [err]  }
+2025-12-29T18:15:24.931980910Z [err]    position: '45',
+2025-12-29T18:15:24.931985309Z [err]    internalPosition: undefined,
+2025-12-29T18:15:24.931989638Z [err]    internalQuery: undefined,
+2025-12-29T18:15:24.931993948Z [err]    where: undefined,
+2025-12-29T18:15:24.931997788Z [err]    schema: undefined,
+2025-12-29T18:15:25.700551769Z [err]    code: '42P01',
+2025-12-29T18:15:25.700551856Z [err]    dataType: undefined,
+2025-12-29T18:15:25.700563041Z [err]    detail: undefined,
+2025-12-29T18:15:25.700563462Z [err]    constraint: undefined,
+2025-12-29T18:15:25.700572325Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:25.700573105Z [err]    hint: undefined,
+2025-12-29T18:15:25.700580112Z [err]    line: '1449',
+2025-12-29T18:15:25.700582425Z [err]    position: '45',
+2025-12-29T18:15:25.700587722Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:25.700591321Z [err]    internalPosition: undefined,
+2025-12-29T18:15:25.700594840Z [err]  Failed to seed message for 2025-02-06: error: relation "messages" does not exist
+2025-12-29T18:15:25.700595219Z [err]  }
+2025-12-29T18:15:25.700599404Z [err]    internalQuery: undefined,
+2025-12-29T18:15:25.700604617Z [err]    where: undefined,
+2025-12-29T18:15:25.700609249Z [err]    schema: undefined,
+2025-12-29T18:15:25.700614161Z [err]    table: undefined,
+2025-12-29T18:15:25.700615069Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:25.700619107Z [err]    column: undefined,
+2025-12-29T18:15:25.700632591Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:25.700650116Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:25.700664794Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:25.700678462Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:25.700691796Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:25.700706759Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:25.700717595Z [err]    length: 107,
+2025-12-29T18:15:25.700730920Z [err]    severity: 'ERROR',
+2025-12-29T18:15:26.474629717Z [err]  Failed to seed message for 2025-02-07: error: relation "messages" does not exist
+2025-12-29T18:15:26.474636365Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:26.474641425Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:26.474645864Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:26.474650528Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:26.474655266Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:26.474656258Z [err]    hint: undefined,
+2025-12-29T18:15:26.474659951Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:26.474665534Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:26.474668110Z [err]    position: '45',
+2025-12-29T18:15:26.474671182Z [err]    length: 107,
+2025-12-29T18:15:26.474676218Z [err]    severity: 'ERROR',
+2025-12-29T18:15:26.474676998Z [err]    internalPosition: undefined,
+2025-12-29T18:15:26.474683433Z [err]    code: '42P01',
+2025-12-29T18:15:26.474683933Z [err]    internalQuery: undefined,
+2025-12-29T18:15:26.474691017Z [err]    where: undefined,
+2025-12-29T18:15:26.474692020Z [err]    detail: undefined,
+2025-12-29T18:15:26.474698137Z [err]    schema: undefined,
+2025-12-29T18:15:26.474704283Z [err]    table: undefined,
+2025-12-29T18:15:26.474710528Z [err]    column: undefined,
+2025-12-29T18:15:26.474718067Z [err]    dataType: undefined,
+2025-12-29T18:15:26.474725119Z [err]    constraint: undefined,
+2025-12-29T18:15:26.474731250Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:26.474737691Z [err]    line: '1449',
+2025-12-29T18:15:26.474746245Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:26.474752662Z [err]  }
+2025-12-29T18:15:27.389367198Z [err]  Failed to seed message for 2025-02-08: error: relation "messages" does not exist
+2025-12-29T18:15:27.389369493Z [err]  }
+2025-12-29T18:15:27.389374946Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:27.389379231Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:27.389383301Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:27.389387490Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:27.389391349Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:27.389395435Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:27.389399415Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:27.389403379Z [err]    length: 107,
+2025-12-29T18:15:27.389407180Z [err]    severity: 'ERROR',
+2025-12-29T18:15:27.389411151Z [err]    code: '42P01',
+2025-12-29T18:15:27.389415160Z [err]    detail: undefined,
+2025-12-29T18:15:27.389419128Z [err]    hint: undefined,
+2025-12-29T18:15:27.389422874Z [err]    position: '45',
+2025-12-29T18:15:27.389426454Z [err]    internalPosition: undefined,
+2025-12-29T18:15:27.389430167Z [err]    internalQuery: undefined,
+2025-12-29T18:15:27.389434228Z [err]    where: undefined,
+2025-12-29T18:15:27.389438574Z [err]    schema: undefined,
+2025-12-29T18:15:27.389443407Z [err]    table: undefined,
+2025-12-29T18:15:27.389447435Z [err]    column: undefined,
+2025-12-29T18:15:27.389452353Z [err]    dataType: undefined,
+2025-12-29T18:15:27.389456105Z [err]    constraint: undefined,
+2025-12-29T18:15:27.389459915Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:27.389463683Z [err]    line: '1449',
+2025-12-29T18:15:27.389467466Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:28.263961106Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:28.263974624Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:28.263977879Z [err]  }
+2025-12-29T18:15:28.263988001Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:28.263994132Z [err]    internalPosition: undefined,
+2025-12-29T18:15:28.263998809Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:28.264020007Z [err]    dataType: undefined,
+2025-12-29T18:15:28.264020458Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:28.264021774Z [err]    internalQuery: undefined,
+2025-12-29T18:15:28.264031689Z [err]    length: 107,
+2025-12-29T18:15:28.264032489Z [err]    constraint: undefined,
+2025-12-29T18:15:28.264034227Z [err]    where: undefined,
+2025-12-29T18:15:28.264043147Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:28.264043262Z [err]    severity: 'ERROR',
+2025-12-29T18:15:28.264045178Z [err]    schema: undefined,
+2025-12-29T18:15:28.264053215Z [err]    code: '42P01',
+2025-12-29T18:15:28.264053289Z [err]    line: '1449',
+2025-12-29T18:15:28.264056385Z [err]    table: undefined,
+2025-12-29T18:15:28.264056849Z [err]  Failed to seed message for 2025-02-09: error: relation "messages" does not exist
+2025-12-29T18:15:28.264062673Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:28.264064310Z [err]    detail: undefined,
+2025-12-29T18:15:28.264066777Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:28.264070678Z [err]    column: undefined,
+2025-12-29T18:15:28.264071012Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:28.264079255Z [err]    hint: undefined,
+2025-12-29T18:15:28.264087295Z [err]    position: '45',
+2025-12-29T18:15:28.937665524Z [err]    where: undefined,
+2025-12-29T18:15:28.937677826Z [err]    schema: undefined,
+2025-12-29T18:15:28.937685736Z [err]    table: undefined,
+2025-12-29T18:15:28.937693286Z [err]    column: undefined,
+2025-12-29T18:15:28.937701453Z [err]    dataType: undefined,
+2025-12-29T18:15:28.937704100Z [err]  Failed to seed message for 2025-02-10: error: relation "messages" does not exist
+2025-12-29T18:15:28.937711890Z [err]    constraint: undefined,
+2025-12-29T18:15:28.937713236Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:28.937723478Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:28.937723562Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:28.937732908Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:28.937734084Z [err]    line: '1449',
+2025-12-29T18:15:28.937742716Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:28.937743160Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:28.937752872Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:28.937752946Z [err]  }
+2025-12-29T18:15:28.937761830Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:28.937768879Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:28.937776211Z [err]    length: 107,
+2025-12-29T18:15:28.937783712Z [err]    severity: 'ERROR',
+2025-12-29T18:15:28.937791147Z [err]    code: '42P01',
+2025-12-29T18:15:28.937798751Z [err]    detail: undefined,
+2025-12-29T18:15:28.937805995Z [err]    hint: undefined,
+2025-12-29T18:15:28.937813154Z [err]    position: '45',
+2025-12-29T18:15:28.937820473Z [err]    internalPosition: undefined,
+2025-12-29T18:15:28.937827724Z [err]    internalQuery: undefined,
+2025-12-29T18:15:29.845138320Z [err]    internalPosition: undefined,
+2025-12-29T18:15:29.845142274Z [err]  Failed to seed message for 2025-02-11: error: relation "messages" does not exist
+2025-12-29T18:15:29.845150114Z [err]    internalQuery: undefined,
+2025-12-29T18:15:29.845150180Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:29.845157427Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:29.845157718Z [err]    where: undefined,
+2025-12-29T18:15:29.845164391Z [err]    schema: undefined,
+2025-12-29T18:15:29.845164864Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:29.845171124Z [err]    table: undefined,
+2025-12-29T18:15:29.845171793Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:29.845178557Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:29.845178626Z [err]    column: undefined,
+2025-12-29T18:15:29.845185215Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:29.845185665Z [err]    dataType: undefined,
+2025-12-29T18:15:29.845191784Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:29.845192442Z [err]    constraint: undefined,
+2025-12-29T18:15:29.845198818Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:29.845201016Z [err]    length: 107,
+2025-12-29T18:15:29.845205604Z [err]    line: '1449',
+2025-12-29T18:15:29.845207615Z [err]    severity: 'ERROR',
+2025-12-29T18:15:29.845212080Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:29.845215280Z [err]    code: '42P01',
+2025-12-29T18:15:29.845218375Z [err]  }
+2025-12-29T18:15:29.845221958Z [err]    detail: undefined,
+2025-12-29T18:15:29.845227642Z [err]    hint: undefined,
+2025-12-29T18:15:29.845234085Z [err]    position: '45',
+2025-12-29T18:15:30.637936980Z [err]  Failed to seed message for 2025-02-12: error: relation "messages" does not exist
+2025-12-29T18:15:30.637944268Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:30.637951485Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:30.637958720Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:30.637965753Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:30.637972065Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:30.637979335Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:30.637986022Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:30.637992536Z [err]    length: 107,
+2025-12-29T18:15:30.637999442Z [err]    severity: 'ERROR',
+2025-12-29T18:15:30.638006179Z [err]    code: '42P01',
+2025-12-29T18:15:30.638013383Z [err]    detail: undefined,
+2025-12-29T18:15:30.638022374Z [err]    hint: undefined,
+2025-12-29T18:15:30.638028667Z [err]    position: '45',
+2025-12-29T18:15:30.638035387Z [err]    internalPosition: undefined,
+2025-12-29T18:15:30.638042107Z [err]    internalQuery: undefined,
+2025-12-29T18:15:30.638048143Z [err]    where: undefined,
+2025-12-29T18:15:30.638054270Z [err]    schema: undefined,
+2025-12-29T18:15:30.638062442Z [err]    table: undefined,
+2025-12-29T18:15:30.638074559Z [err]    column: undefined,
+2025-12-29T18:15:30.638080833Z [err]    dataType: undefined,
+2025-12-29T18:15:30.638087885Z [err]    constraint: undefined,
+2025-12-29T18:15:30.638093912Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:30.638100599Z [err]    line: '1449',
+2025-12-29T18:15:30.638106283Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:30.638113465Z [err]  }
+2025-12-29T18:15:31.396582119Z [err]    line: '1449',
+2025-12-29T18:15:31.396587910Z [err]  Failed to seed message for 2025-02-13: error: relation "messages" does not exist
+2025-12-29T18:15:31.396591754Z [err]    code: '42P01',
+2025-12-29T18:15:31.396594587Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:31.396594904Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:31.396600241Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:31.396605617Z [err]  }
+2025-12-29T18:15:31.396606662Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:31.396607024Z [err]    detail: undefined,
+2025-12-29T18:15:31.396611975Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:31.396617144Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:31.396617863Z [err]    hint: undefined,
+2025-12-29T18:15:31.396622535Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:31.396625311Z [err]    position: '45',
+2025-12-29T18:15:31.396628240Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:31.396633498Z [err]    length: 107,
+2025-12-29T18:15:31.396634821Z [err]    internalPosition: undefined,
+2025-12-29T18:15:31.396638175Z [err]    severity: 'ERROR',
+2025-12-29T18:15:31.396642308Z [err]    internalQuery: undefined,
+2025-12-29T18:15:31.396648240Z [err]    where: undefined,
+2025-12-29T18:15:31.396654697Z [err]    schema: undefined,
+2025-12-29T18:15:31.396660561Z [err]    table: undefined,
+2025-12-29T18:15:31.396666994Z [err]    column: undefined,
+2025-12-29T18:15:31.396673244Z [err]    dataType: undefined,
+2025-12-29T18:15:31.396680532Z [err]    constraint: undefined,
+2025-12-29T18:15:31.396686761Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:32.321009509Z [err]  Failed to seed message for 2025-02-14: error: relation "messages" does not exist
+2025-12-29T18:15:32.321014898Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:32.321020113Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:32.321031636Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:32.321036610Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:32.321042444Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:32.321047924Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:32.321053143Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:32.321058788Z [err]    length: 107,
+2025-12-29T18:15:32.321065250Z [err]    severity: 'ERROR',
+2025-12-29T18:15:32.321070690Z [err]    code: '42P01',
+2025-12-29T18:15:32.321076836Z [err]    detail: undefined,
+2025-12-29T18:15:32.321082478Z [err]    hint: undefined,
+2025-12-29T18:15:32.321089582Z [err]    position: '45',
+2025-12-29T18:15:32.321095119Z [err]    internalPosition: undefined,
+2025-12-29T18:15:32.321101255Z [err]    internalQuery: undefined,
+2025-12-29T18:15:32.321106538Z [err]    where: undefined,
+2025-12-29T18:15:32.321112136Z [err]    schema: undefined,
+2025-12-29T18:15:32.321117156Z [err]    table: undefined,
+2025-12-29T18:15:32.321123501Z [err]    column: undefined,
+2025-12-29T18:15:32.321128908Z [err]    dataType: undefined,
+2025-12-29T18:15:32.321135064Z [err]    constraint: undefined,
+2025-12-29T18:15:32.321140167Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:32.321145648Z [err]    line: '1449',
+2025-12-29T18:15:32.321150813Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:32.321155960Z [err]  }
+2025-12-29T18:15:33.086595123Z [err]    position: '45',
+2025-12-29T18:15:33.086606512Z [err]  Failed to seed message for 2025-02-15: error: relation "messages" does not exist
+2025-12-29T18:15:33.086606559Z [err]    internalPosition: undefined,
+2025-12-29T18:15:33.086615411Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:33.086615483Z [err]    internalQuery: undefined,
+2025-12-29T18:15:33.086622451Z [err]    where: undefined,
+2025-12-29T18:15:33.086624679Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:33.086630462Z [err]    schema: undefined,
+2025-12-29T18:15:33.086631659Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:33.086637753Z [err]    table: undefined,
+2025-12-29T18:15:33.086640285Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:33.086645205Z [err]    column: undefined,
+2025-12-29T18:15:33.086647392Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:33.086652718Z [err]    dataType: undefined,
+2025-12-29T18:15:33.086653947Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:33.086659932Z [err]    constraint: undefined,
+2025-12-29T18:15:33.086660639Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:33.086667249Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:33.086667603Z [err]    length: 107,
+2025-12-29T18:15:33.086674035Z [err]    line: '1449',
+2025-12-29T18:15:33.086674373Z [err]    severity: 'ERROR',
+2025-12-29T18:15:33.086681299Z [err]    code: '42P01',
+2025-12-29T18:15:33.086681742Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:33.086688255Z [err]    detail: undefined,
+2025-12-29T18:15:33.086688417Z [err]  }
+2025-12-29T18:15:33.086693934Z [err]    hint: undefined,
+2025-12-29T18:15:33.854589885Z [err]    line: '1449',
+2025-12-29T18:15:33.854593836Z [err]    detail: undefined,
+2025-12-29T18:15:33.854593869Z [err]  Failed to seed message for 2025-02-16: error: relation "messages" does not exist
+2025-12-29T18:15:33.854600697Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:33.854602785Z [err]    column: undefined,
+2025-12-29T18:15:33.854603359Z [err]    hint: undefined,
+2025-12-29T18:15:33.854608526Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:33.854611529Z [err]  }
+2025-12-29T18:15:33.854613352Z [err]    position: '45',
+2025-12-29T18:15:33.854614750Z [err]    dataType: undefined,
+2025-12-29T18:15:33.854619027Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:33.854619605Z [err]    constraint: undefined,
+2025-12-29T18:15:33.854626593Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:33.854628070Z [err]    internalPosition: undefined,
+2025-12-29T18:15:33.854630876Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:33.854635388Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:33.854638104Z [err]    internalQuery: undefined,
+2025-12-29T18:15:33.854644329Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:33.854646602Z [err]    where: undefined,
+2025-12-29T18:15:33.854653325Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:33.854656692Z [err]    schema: undefined,
+2025-12-29T18:15:33.854663108Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:33.854665579Z [err]    table: undefined,
+2025-12-29T18:15:33.854669377Z [err]    length: 107,
+2025-12-29T18:15:33.854674537Z [err]    severity: 'ERROR',
+2025-12-29T18:15:33.854678715Z [err]    code: '42P01',
+2025-12-29T18:15:34.762555296Z [err]  Failed to seed message for 2025-02-17: error: relation "messages" does not exist
+2025-12-29T18:15:34.762558345Z [err]    position: '45',
+2025-12-29T18:15:34.762566604Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:34.762570963Z [err]    internalPosition: undefined,
+2025-12-29T18:15:34.762574909Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:34.762581705Z [err]    internalQuery: undefined,
+2025-12-29T18:15:34.762582758Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:34.762590578Z [err]    where: undefined,
+2025-12-29T18:15:34.762591198Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:34.762598879Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:34.762601267Z [err]    schema: undefined,
+2025-12-29T18:15:34.762606498Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:34.762611238Z [err]    table: undefined,
+2025-12-29T18:15:34.762611782Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:34.762616231Z [err]    length: 107,
+2025-12-29T18:15:34.762620401Z [err]    column: undefined,
+2025-12-29T18:15:34.762623511Z [err]    severity: 'ERROR',
+2025-12-29T18:15:34.762628667Z [err]    code: '42P01',
+2025-12-29T18:15:34.762629452Z [err]    dataType: undefined,
+2025-12-29T18:15:34.762633667Z [err]    detail: undefined,
+2025-12-29T18:15:34.762638156Z [err]    constraint: undefined,
+2025-12-29T18:15:34.762640048Z [err]    hint: undefined,
+2025-12-29T18:15:34.762646498Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:34.762653489Z [err]    line: '1449',
+2025-12-29T18:15:34.762660067Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:34.762667494Z [err]  }
+2025-12-29T18:15:35.533915604Z [err]  Failed to seed message for 2025-02-18: error: relation "messages" does not exist
+2025-12-29T18:15:35.533922961Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:35.533926542Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:35.533928653Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:35.533933537Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:35.533936379Z [err]    line: '1449',
+2025-12-29T18:15:35.533939018Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:35.533943715Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:35.533948589Z [err]  }
+2025-12-29T18:15:35.533950222Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:35.533954877Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:35.533958525Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:35.533962489Z [err]    length: 107,
+2025-12-29T18:15:35.533966844Z [err]    severity: 'ERROR',
+2025-12-29T18:15:35.533970997Z [err]    code: '42P01',
+2025-12-29T18:15:35.533974791Z [err]    detail: undefined,
+2025-12-29T18:15:35.533978797Z [err]    hint: undefined,
+2025-12-29T18:15:35.533984135Z [err]    position: '45',
+2025-12-29T18:15:35.533987742Z [err]    internalPosition: undefined,
+2025-12-29T18:15:35.533991783Z [err]    internalQuery: undefined,
+2025-12-29T18:15:35.533995834Z [err]    where: undefined,
+2025-12-29T18:15:35.533999627Z [err]    schema: undefined,
+2025-12-29T18:15:35.534003270Z [err]    table: undefined,
+2025-12-29T18:15:35.534007347Z [err]    column: undefined,
+2025-12-29T18:15:35.534011174Z [err]    dataType: undefined,
+2025-12-29T18:15:35.534014653Z [err]    constraint: undefined,
+2025-12-29T18:15:36.307838611Z [err]  Failed to seed message for 2025-02-19: error: relation "messages" does not exist
+2025-12-29T18:15:36.307838962Z [err]    dataType: undefined,
+2025-12-29T18:15:36.307842283Z [err]    hint: undefined,
+2025-12-29T18:15:36.307847383Z [err]    constraint: undefined,
+2025-12-29T18:15:36.307849790Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:36.307852819Z [err]    position: '45',
+2025-12-29T18:15:36.307853973Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:36.307858682Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:36.307860953Z [err]    line: '1449',
+2025-12-29T18:15:36.307862930Z [err]    internalPosition: undefined,
+2025-12-29T18:15:36.307867241Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:36.307869151Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:36.307872425Z [err]    internalQuery: undefined,
+2025-12-29T18:15:36.307873243Z [err]  }
+2025-12-29T18:15:36.307877840Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:36.307880554Z [err]    where: undefined,
+2025-12-29T18:15:36.307886106Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:36.307888095Z [err]    schema: undefined,
+2025-12-29T18:15:36.307892828Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:36.307895904Z [err]    table: undefined,
+2025-12-29T18:15:36.307899470Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:36.307903395Z [err]    column: undefined,
+2025-12-29T18:15:36.307906624Z [err]    length: 107,
+2025-12-29T18:15:36.307912645Z [err]    severity: 'ERROR',
+2025-12-29T18:15:36.307918760Z [err]    code: '42P01',
+2025-12-29T18:15:36.307925997Z [err]    detail: undefined,
+2025-12-29T18:15:37.292521687Z [err]  Failed to seed message for 2025-02-20: error: relation "messages" does not exist
+2025-12-29T18:15:37.292525343Z [err]    position: '45',
+2025-12-29T18:15:37.292529768Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:37.292537319Z [err]    internalPosition: undefined,
+2025-12-29T18:15:37.292538744Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:37.292547311Z [err]    internalQuery: undefined,
+2025-12-29T18:15:37.292547425Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:37.292556287Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:37.292556855Z [err]    where: undefined,
+2025-12-29T18:15:37.292564415Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:37.292565395Z [err]    schema: undefined,
+2025-12-29T18:15:37.292571323Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:37.292575205Z [err]    table: undefined,
+2025-12-29T18:15:37.292576406Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:37.292581823Z [err]    length: 107,
+2025-12-29T18:15:37.292584188Z [err]    column: undefined,
+2025-12-29T18:15:37.292587433Z [err]    severity: 'ERROR',
+2025-12-29T18:15:37.292592385Z [err]    code: '42P01',
+2025-12-29T18:15:37.292593632Z [err]    dataType: undefined,
+2025-12-29T18:15:37.292597433Z [err]    detail: undefined,
+2025-12-29T18:15:37.292602411Z [err]    constraint: undefined,
+2025-12-29T18:15:37.292602605Z [err]    hint: undefined,
+2025-12-29T18:15:37.292610616Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:37.292617374Z [err]    line: '1449',
+2025-12-29T18:15:37.292624322Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:37.292631021Z [err]  }
+2025-12-29T18:15:37.991302213Z [err]    internalQuery: undefined,
+2025-12-29T18:15:37.991306353Z [err]  Failed to seed message for 2025-02-21: error: relation "messages" does not exist
+2025-12-29T18:15:37.991316850Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:37.991321304Z [err]    where: undefined,
+2025-12-29T18:15:37.991325232Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:37.991333273Z [err]    schema: undefined,
+2025-12-29T18:15:37.991333461Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:37.991339581Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:37.991342480Z [err]    table: undefined,
+2025-12-29T18:15:37.991345216Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:37.991349760Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:37.991352013Z [err]    column: undefined,
+2025-12-29T18:15:37.991355021Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:37.991360042Z [err]    dataType: undefined,
+2025-12-29T18:15:37.991360910Z [err]    length: 107,
+2025-12-29T18:15:37.991365750Z [err]    constraint: undefined,
+2025-12-29T18:15:37.991367727Z [err]    severity: 'ERROR',
+2025-12-29T18:15:37.991371053Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:37.991375059Z [err]    code: '42P01',
+2025-12-29T18:15:37.991376392Z [err]    line: '1449',
+2025-12-29T18:15:37.991381701Z [err]    detail: undefined,
+2025-12-29T18:15:37.991382441Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:37.991387488Z [err]    hint: undefined,
+2025-12-29T18:15:37.991388230Z [err]  }
+2025-12-29T18:15:37.991392526Z [err]    position: '45',
+2025-12-29T18:15:37.991396279Z [err]    internalPosition: undefined,
+2025-12-29T18:15:38.778092969Z [err]  Failed to seed message for 2025-02-22: error: relation "messages" does not exist
+2025-12-29T18:15:38.778101377Z [err]    length: 107,
+2025-12-29T18:15:38.778105305Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:38.778109838Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:38.778110607Z [err]    severity: 'ERROR',
+2025-12-29T18:15:38.778116828Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:38.778117133Z [err]    code: '42P01',
+2025-12-29T18:15:38.778117980Z [err]  }
+2025-12-29T18:15:38.778123072Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:38.778124647Z [err]    detail: undefined,
+2025-12-29T18:15:38.778130874Z [err]    hint: undefined,
+2025-12-29T18:15:38.778131314Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:38.778136782Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:38.778138187Z [err]    position: '45',
+2025-12-29T18:15:38.778143766Z [err]    internalPosition: undefined,
+2025-12-29T18:15:38.778144320Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:38.778149294Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:38.778150629Z [err]    internalQuery: undefined,
+2025-12-29T18:15:38.778154680Z [err]    where: undefined,
+2025-12-29T18:15:38.778160023Z [err]    schema: undefined,
+2025-12-29T18:15:38.778165266Z [err]    table: undefined,
+2025-12-29T18:15:38.778171545Z [err]    column: undefined,
+2025-12-29T18:15:38.778177696Z [err]    dataType: undefined,
+2025-12-29T18:15:38.778184678Z [err]    constraint: undefined,
+2025-12-29T18:15:38.778190483Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:38.778195589Z [err]    line: '1449',
+2025-12-29T18:15:39.685140028Z [err]  Failed to seed message for 2025-02-23: error: relation "messages" does not exist
+2025-12-29T18:15:39.685149929Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:39.685156552Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:39.685161632Z [err]    table: undefined,
+2025-12-29T18:15:39.685163664Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:39.685171409Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:39.685177038Z [err]    column: undefined,
+2025-12-29T18:15:39.685178827Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:39.685183461Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:39.685188585Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:39.685189414Z [err]    dataType: undefined,
+2025-12-29T18:15:39.685193480Z [err]    length: 107,
+2025-12-29T18:15:39.685198513Z [err]    severity: 'ERROR',
+2025-12-29T18:15:39.685199935Z [err]    constraint: undefined,
+2025-12-29T18:15:39.685207387Z [err]    code: '42P01',
+2025-12-29T18:15:39.685210253Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:39.685213397Z [err]    detail: undefined,
+2025-12-29T18:15:39.685218491Z [err]    hint: undefined,
+2025-12-29T18:15:39.685221672Z [err]    line: '1449',
+2025-12-29T18:15:39.685223829Z [err]    position: '45',
+2025-12-29T18:15:39.685228686Z [err]    internalPosition: undefined,
+2025-12-29T18:15:39.685234291Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:39.685234617Z [err]    internalQuery: undefined,
+2025-12-29T18:15:39.685239686Z [err]    where: undefined,
+2025-12-29T18:15:39.685245374Z [err]  }
+2025-12-29T18:15:39.685245418Z [err]    schema: undefined,
+2025-12-29T18:15:40.453246641Z [err]  Failed to seed message for 2025-02-24: error: relation "messages" does not exist
+2025-12-29T18:15:40.453254264Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:40.453264633Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:40.453271769Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:40.453278294Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:40.453285082Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:40.453291637Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:40.453298254Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:40.453305395Z [err]    length: 107,
+2025-12-29T18:15:40.453312425Z [err]    severity: 'ERROR',
+2025-12-29T18:15:40.453326598Z [err]    code: '42P01',
+2025-12-29T18:15:40.453332581Z [err]    detail: undefined,
+2025-12-29T18:15:40.453339232Z [err]    hint: undefined,
+2025-12-29T18:15:40.453345940Z [err]    position: '45',
+2025-12-29T18:15:40.453353082Z [err]    internalPosition: undefined,
+2025-12-29T18:15:40.453360916Z [err]    internalQuery: undefined,
+2025-12-29T18:15:40.453368785Z [err]    where: undefined,
+2025-12-29T18:15:40.453374797Z [err]    schema: undefined,
+2025-12-29T18:15:40.453382078Z [err]    table: undefined,
+2025-12-29T18:15:40.453389445Z [err]    column: undefined,
+2025-12-29T18:15:40.453396325Z [err]    dataType: undefined,
+2025-12-29T18:15:40.453403090Z [err]    constraint: undefined,
+2025-12-29T18:15:40.453409412Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:40.453416625Z [err]    line: '1449',
+2025-12-29T18:15:40.453423427Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:40.453429441Z [err]  }
+2025-12-29T18:15:41.440139124Z [err]  Failed to seed message for 2025-02-25: error: relation "messages" does not exist
+2025-12-29T18:15:41.440146090Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:41.444385675Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:41.444398262Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:41.444406382Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:41.444414115Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:41.444421592Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:41.444430510Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:41.444439665Z [err]    length: 107,
+2025-12-29T18:15:41.444447840Z [err]    severity: 'ERROR',
+2025-12-29T18:15:41.444456119Z [err]    code: '42P01',
+2025-12-29T18:15:41.444465269Z [err]    detail: undefined,
+2025-12-29T18:15:41.444473634Z [err]    hint: undefined,
+2025-12-29T18:15:41.444482128Z [err]    position: '45',
+2025-12-29T18:15:41.444491526Z [err]    internalPosition: undefined,
+2025-12-29T18:15:41.444499716Z [err]    internalQuery: undefined,
+2025-12-29T18:15:41.444508451Z [err]    where: undefined,
+2025-12-29T18:15:41.444525983Z [err]    schema: undefined,
+2025-12-29T18:15:41.444535063Z [err]    table: undefined,
+2025-12-29T18:15:41.444543913Z [err]    column: undefined,
+2025-12-29T18:15:41.444551841Z [err]    dataType: undefined,
+2025-12-29T18:15:41.444561317Z [err]    constraint: undefined,
+2025-12-29T18:15:41.444571135Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:41.444579021Z [err]    line: '1449',
+2025-12-29T18:15:41.444587364Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:41.444595965Z [err]  }
+2025-12-29T18:15:42.138742496Z [err]    where: undefined,
+2025-12-29T18:15:42.138755182Z [err]    schema: undefined,
+2025-12-29T18:15:42.138763873Z [err]    table: undefined,
+2025-12-29T18:15:42.138771264Z [err]    column: undefined,
+2025-12-29T18:15:42.138779122Z [err]    dataType: undefined,
+2025-12-29T18:15:42.138788175Z [err]  Failed to seed message for 2025-02-26: error: relation "messages" does not exist
+2025-12-29T18:15:42.138788326Z [err]    constraint: undefined,
+2025-12-29T18:15:42.138797741Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:42.138798041Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:42.138808050Z [err]    line: '1449',
+2025-12-29T18:15:42.138808682Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:42.138817282Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:42.138818874Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:42.138827591Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:42.138828533Z [err]  }
+2025-12-29T18:15:42.138834904Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:42.138841062Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:42.138847794Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:42.138854298Z [err]    length: 107,
+2025-12-29T18:15:42.138860920Z [err]    severity: 'ERROR',
+2025-12-29T18:15:42.138869154Z [err]    code: '42P01',
+2025-12-29T18:15:42.138875280Z [err]    detail: undefined,
+2025-12-29T18:15:42.138881640Z [err]    hint: undefined,
+2025-12-29T18:15:42.138888251Z [err]    position: '45',
+2025-12-29T18:15:42.138894863Z [err]    internalPosition: undefined,
+2025-12-29T18:15:42.138901518Z [err]    internalQuery: undefined,
+2025-12-29T18:15:42.908572794Z [err]  Failed to seed message for 2025-02-27: error: relation "messages" does not exist
+2025-12-29T18:15:42.908573762Z [err]    internalPosition: undefined,
+2025-12-29T18:15:42.908584181Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:42.908585361Z [err]    internalQuery: undefined,
+2025-12-29T18:15:42.908591028Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:42.908595200Z [err]    where: undefined,
+2025-12-29T18:15:42.908597018Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:42.908603375Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:42.908604338Z [err]    schema: undefined,
+2025-12-29T18:15:42.908608976Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:42.908613072Z [err]    table: undefined,
+2025-12-29T18:15:42.908614691Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:42.908620393Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:42.908622638Z [err]    column: undefined,
+2025-12-29T18:15:42.908628656Z [err]    length: 107,
+2025-12-29T18:15:42.908632864Z [err]    dataType: undefined,
+2025-12-29T18:15:42.908634524Z [err]    severity: 'ERROR',
+2025-12-29T18:15:42.908639656Z [err]    code: '42P01',
+2025-12-29T18:15:42.908642403Z [err]    constraint: undefined,
+2025-12-29T18:15:42.908644935Z [err]    detail: undefined,
+2025-12-29T18:15:42.908649879Z [err]    hint: undefined,
+2025-12-29T18:15:42.908651791Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:42.908655018Z [err]    position: '45',
+2025-12-29T18:15:42.908660986Z [err]    line: '1449',
+2025-12-29T18:15:42.908667208Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:42.908673914Z [err]  }
+2025-12-29T18:15:43.684511046Z [err]    column: undefined,
+2025-12-29T18:15:43.684512644Z [err]  Failed to seed message for 2025-02-28: error: relation "messages" does not exist
+2025-12-29T18:15:43.684520003Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:43.684521293Z [err]    dataType: undefined,
+2025-12-29T18:15:43.684525660Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:43.684528128Z [err]    constraint: undefined,
+2025-12-29T18:15:43.684531050Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:43.684535085Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:43.684536808Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:43.684542262Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:43.684543437Z [err]    line: '1449',
+2025-12-29T18:15:43.684548974Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:43.684549754Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:43.684554505Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:43.684556099Z [err]  }
+2025-12-29T18:15:43.684559125Z [err]    length: 107,
+2025-12-29T18:15:43.684564610Z [err]    severity: 'ERROR',
+2025-12-29T18:15:43.684568439Z [err]    code: '42P01',
+2025-12-29T18:15:43.684572145Z [err]    detail: undefined,
+2025-12-29T18:15:43.684576202Z [err]    hint: undefined,
+2025-12-29T18:15:43.684579919Z [err]    position: '45',
+2025-12-29T18:15:43.684583456Z [err]    internalPosition: undefined,
+2025-12-29T18:15:43.684587165Z [err]    internalQuery: undefined,
+2025-12-29T18:15:43.684590661Z [err]    where: undefined,
+2025-12-29T18:15:43.684594507Z [err]    schema: undefined,
+2025-12-29T18:15:43.684598443Z [err]    table: undefined,
+2025-12-29T18:15:44.613543977Z [err]  Failed to seed message for 2025-03-01: error: relation "messages" does not exist
+2025-12-29T18:15:44.613551072Z [err]    constraint: undefined,
+2025-12-29T18:15:44.613551090Z [err]      at /app/dist/index.cjs:64:13326
+2025-12-29T18:15:44.613555533Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-29T18:15:44.613560026Z [err]      at async /app/dist/index.cjs:70:31398
+2025-12-29T18:15:44.613564467Z [err]    file: 'parse_relation.c',
+2025-12-29T18:15:44.613565012Z [err]      at async zd.getMessageByDate (/app/dist/index.cjs:70:100384)
+2025-12-29T18:15:44.613570161Z [err]      at async gq (/app/dist/index.cjs:438:187)
+2025-12-29T18:15:44.613574094Z [err]    line: '1449',
+2025-12-29T18:15:44.613575839Z [err]      at async Lw (/app/dist/index.cjs:73:629)
+2025-12-29T18:15:44.613581344Z [err]      at async /app/dist/index.cjs:438:1457 {
+2025-12-29T18:15:44.613583681Z [err]    routine: 'parserOpenTable'
+2025-12-29T18:15:44.613586394Z [err]    length: 107,
+2025-12-29T18:15:44.613592646Z [err]    severity: 'ERROR',
+2025-12-29T18:15:44.613594643Z [err]  }
+2025-12-29T18:15:44.613598294Z [err]    code: '42P01',
+2025-12-29T18:15:44.613602078Z [err]    detail: undefined,
+2025-12-29T18:15:44.613605906Z [err]    hint: undefined,
+2025-12-29T18:15:44.613609477Z [err]    position: '45',
+2025-12-29T18:15:44.613613133Z [err]    internalPosition: undefined,
+2025-12-29T18:15:44.613617513Z [err]    internalQuery: undefined,
+2025-12-29T18:15:44.613621143Z [err]    where: undefined,
+2025-12-29T18:15:44.613624912Z [err]    schema: undefined,
+2025-12-29T18:15:44.613628466Z [err]    table: undefined,
+2025-12-29T18:15:44.613632090Z [err]    column: undefined,
+2025-12-29T18:15:44.613635967Z [err]    dataType: undefined,
