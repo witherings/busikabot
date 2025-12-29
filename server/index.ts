@@ -90,11 +90,9 @@ app.use((req, res, next) => {
     await setupVite(httpServer, app);
   }
 
-  // ALWAYS serve the app on the port specified in the environment variable PORT
-  // Other ports are firewalled. Default to 5000 if not specified.
-  // this serves both the API and the client.
-  // It is the only port that is not firewalled.
+  // Railway workaround: favor PORT env var if set by Railway, otherwise default to 5000
   const port = parseInt(process.env.PORT || "5000", 10);
+  log(`attempting to listen on port ${port}`);
   httpServer.listen(
     {
       port,
