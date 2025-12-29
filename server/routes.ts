@@ -56,12 +56,12 @@ export async function registerRoutes(
       const botToken = process.env.TELEGRAM_BOT_TOKEN;
       const chatId = process.env.TELEGRAM_CHAT_ID;
 
-      if (!botToken) {
-        return res.status(400).json({ message: "Telegram bot token not configured" });
+      if (!botToken || botToken.includes(':') === false) {
+        return res.status(400).json({ message: "Telegram bot token is invalid or missing" });
       }
 
-      if (!chatId) {
-        return res.status(400).json({ message: "Telegram chat ID not configured" });
+      if (!chatId || /^\d+$/.test(chatId) === false) {
+        return res.status(400).json({ message: "Telegram chat ID must be a number. Check your environment variables." });
       }
 
       const now = new Date();
@@ -487,12 +487,16 @@ async function seedMessages() {
       timeZone: "Europe/Berlin",
     });
 
-    const existing = await storage.getMessageByDate(dateStr);
-    if (!existing) {
-      await storage.createMessage({
-        content: lines[i],
-        displayDate: dateStr
-      });
+    try {
+      const existing = await storage.getMessageByDate(dateStr);
+      if (!existing) {
+        await storage.createMessage({
+          content: lines[i],
+          displayDate: dateStr
+        });
+      }
+    } catch (e) {
+      console.error(`Failed to seed message for ${dateStr}:`, e);
     }
   }
   console.log(`Seeded ${lines.length} daily messages starting from 2024-12-31`);
